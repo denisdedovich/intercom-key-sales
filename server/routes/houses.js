@@ -29,13 +29,22 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   const db = readDB();
+  const total = parseInt(req.body.totalApartments) || 0;
+  const apartments = [];
+  for (let i = 1; i <= total; i++) {
+    apartments.push({
+      id: uuidv4(),
+      number: String(i),
+      residents: []
+    });
+  }
   const house = {
     id: uuidv4(),
     address: req.body.address || '',
-    totalApartments: req.body.totalApartments || 0,
+    totalApartments: total,
     connectedApartments: req.body.connectedApartments || 0,
     monthlyFee: req.body.monthlyFee || 0,
-    apartments: []
+    apartments
   };
   db.houses.push(house);
   writeDB(db);
@@ -114,6 +123,7 @@ router.post('/:houseId/apartments/:aptId/residents', (req, res) => {
   const resident = {
     id: uuidv4(),
     name: req.body.name || '',
+    hasContract: req.body.hasContract || false,
     keysSold: req.body.keysSold || 0,
     isPaid: req.body.isPaid || false,
     paymentMethod: req.body.paymentMethod || '',

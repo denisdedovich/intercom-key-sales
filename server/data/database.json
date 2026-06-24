@@ -1,3 +1,5469 @@
 {
-  "houses": []
+  "houses": [
+    {
+      "id": "57282749-0778-41e8-95ba-f729b25fbe30",
+      "address": "МЖ1Д",
+      "columns": [
+        "№ подъезда",
+        "№ квартиры",
+        "наличие договора",
+        "выданы базовые ключи",
+        "сумма",
+        "Провели продажу"
+      ],
+      "totalApartments": 220,
+      "connectedApartments": 0,
+      "monthlyFee": 80,
+      "apartments": [
+        {
+          "id": "b5f4fbdd-a594-49b9-b02c-7f6ab72a9e22",
+          "number": "1",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 1,
+                "№ квартиры": 1,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "06aa1b3c-b2f8-4e0b-9794-87855f1c1097"
+            }
+          ]
+        },
+        {
+          "id": "c7b0c623-a781-4050-9938-d7da5e337136",
+          "number": "2",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 2,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "590ea568-05f7-434d-9a9c-80ae61e7c84d"
+            }
+          ]
+        },
+        {
+          "id": "90ea7952-f3e2-48e0-bf13-ea2609c17f41",
+          "number": "3",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 3,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "0f243c8b-00ba-4a2d-aa8d-7b6f6f2235db"
+            }
+          ]
+        },
+        {
+          "id": "ca0c5ad3-5e8e-4214-9e53-4727031c5aed",
+          "number": "4",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 4,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "2788c32d-f03a-4192-8b48-c23d2caa3609"
+            }
+          ]
+        },
+        {
+          "id": "d1239ab8-060e-44d2-9a9f-379002dde43c",
+          "number": "5",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 5,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "d88826e4-c77f-4cc5-ac4d-b00b1dea92a4"
+            }
+          ]
+        },
+        {
+          "id": "70946e5b-401c-4411-949a-899dcbeb54ea",
+          "number": "6",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 6,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "b722d5b8-84ac-4e33-811e-48e2bba74340"
+            }
+          ]
+        },
+        {
+          "id": "c4659f3b-3d12-4275-8402-3df4f11d448e",
+          "number": "7",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 7,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "621e1cf5-8db7-4d32-a6b9-00987a5350e0"
+            }
+          ]
+        },
+        {
+          "id": "c80a06cc-a07b-4142-bacd-d643c3e96f9a",
+          "number": "8",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 8,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "703c69dc-af1c-485f-9b6f-a9a44fb016a0"
+            }
+          ]
+        },
+        {
+          "id": "96133a20-d735-42e4-9c5b-5380211a88f8",
+          "number": "9",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 9,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "19f77c8d-b3c4-4e0d-bc89-2216a9499636"
+            }
+          ]
+        },
+        {
+          "id": "5a043c12-c95b-4b86-81aa-9efb9e685267",
+          "number": "10",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 10,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9be0da72-c50c-489d-a864-b26e44574858"
+            }
+          ]
+        },
+        {
+          "id": "6e89553d-4eb7-46ac-bf90-b6b855205c51",
+          "number": "11",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 11,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9157c170-b9fd-4558-9c4d-cdb7bd7d5e46"
+            }
+          ]
+        },
+        {
+          "id": "9df308d1-5049-4e7f-90ed-fb7c3d55d662",
+          "number": "12",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 12,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "cecff207-2bac-464e-b8c7-8d5e87aa108f"
+            }
+          ]
+        },
+        {
+          "id": "da6c7982-43c3-4c0c-8598-de5557f22a5c",
+          "number": "13",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 2,
+                "№ квартиры": 13,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "764d9db8-03b5-412d-851f-7c05c6df394e"
+            }
+          ]
+        },
+        {
+          "id": "722907a7-a4a7-400c-ab95-6dec06a8edfa",
+          "number": "14",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 14,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9f8b37a9-12c8-4901-adfd-e7903bbbc83e"
+            }
+          ]
+        },
+        {
+          "id": "f3feba04-354c-4872-895a-4302919b86c6",
+          "number": "15",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 15,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "44c86f5c-361b-4108-a749-a3fe81e9faeb"
+            }
+          ]
+        },
+        {
+          "id": "679c28de-32cb-4ce1-84c6-b258133bf898",
+          "number": "16",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 16,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "8a73cf6e-18d0-4c83-afef-531717ff9c0a"
+            }
+          ]
+        },
+        {
+          "id": "503a1b59-75f2-4b2f-98d6-f23a06463d1a",
+          "number": "17",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 17,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "690801a3-0eb0-439d-ab4c-29c619e88caa"
+            }
+          ]
+        },
+        {
+          "id": "37c6a50c-d054-4c10-8e7e-62adfc9dd1c2",
+          "number": "18",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 18,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9048ad38-f7e1-482c-87bc-4c3cff813d86"
+            }
+          ]
+        },
+        {
+          "id": "6dbb3588-f143-4835-8c94-33ed94459825",
+          "number": "19",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 19,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "наличка",
+                "деньги": 300,
+                "Провели продажу": true
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "16f89ef6-209b-4453-9b56-49f76e0b8cbb"
+            }
+          ]
+        },
+        {
+          "id": "0d2cf710-156d-4911-b2a4-b0a65aabe82b",
+          "number": "20",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 20,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "3528d446-33c3-4869-b810-fbf88d17c16b"
+            }
+          ]
+        },
+        {
+          "id": "59954e2d-b155-4113-af1e-867de18dfa3a",
+          "number": "21",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 21,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6f0155e9-4827-4734-9104-e843ad75894d"
+            }
+          ]
+        },
+        {
+          "id": "e6993665-2b09-4631-bbac-50af54b039e3",
+          "number": "22",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 22,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "57be7118-901b-4d4c-a61f-414841a4b84e"
+            }
+          ]
+        },
+        {
+          "id": "8e85643d-02f0-4633-9425-08689ef6489c",
+          "number": "23",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 23,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "1aac8035-b037-4c9b-ad74-c47685fc4425"
+            }
+          ]
+        },
+        {
+          "id": "3e0ad358-f427-4ba4-95a0-1cd0df0667f7",
+          "number": "24",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 24,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "61a851ae-5a82-406e-8498-6344ae0dc73c"
+            }
+          ]
+        },
+        {
+          "id": "95174e79-fd4e-4cad-82b7-5fd48daeff69",
+          "number": "25",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 3,
+                "№ квартиры": 25,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "ca8072f5-1d8c-48f6-9d01-7c0a245fcf62"
+            }
+          ]
+        },
+        {
+          "id": "7b5a3e1f-859b-4428-9200-020f50947349",
+          "number": "26",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 26,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "5cb2bbe0-ffc8-4c73-b403-5b9f29f682de"
+            }
+          ]
+        },
+        {
+          "id": "12f9e134-99bf-4538-84d4-571badca1e5c",
+          "number": "27",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 27,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "наличка",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "07193de4-e654-408e-bc4d-cb26f59e3cb8"
+            }
+          ]
+        },
+        {
+          "id": "dfd400a9-bcd5-4d91-ae27-f72efc8a0473",
+          "number": "28",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 28,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "23877d3b-3090-4915-a68d-8f18911911b7"
+            }
+          ]
+        },
+        {
+          "id": "f3e8affc-81d6-48a5-90b6-532e2141efba",
+          "number": "29",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 29,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "d09675f1-efc6-4b76-a208-4f7c34ab057b"
+            }
+          ]
+        },
+        {
+          "id": "25ab0978-9dfb-45b0-bb46-7fdb490435a4",
+          "number": "30",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 30,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "14087681-8c24-40f5-ab3b-2e01917b0c6e"
+            }
+          ]
+        },
+        {
+          "id": "43af3518-6914-4ad7-9932-df1f9233a2c3",
+          "number": "31",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 31,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "карта",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "774271c2-8b45-41f7-a489-314658a94f88"
+            }
+          ]
+        },
+        {
+          "id": "63aaafb0-d0ae-426d-9d8b-a33475668664",
+          "number": "32",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 32,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9b7033cb-50dd-4d79-be8a-4209835420d8"
+            }
+          ]
+        },
+        {
+          "id": "1ff9e4d6-0a93-450f-b721-0348f0473f96",
+          "number": "33",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 33,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9f3d26cf-56ec-49b2-a8ec-3f2b68cf8b9e"
+            }
+          ]
+        },
+        {
+          "id": "a4766898-6b63-403c-bdc5-c686eeeefb08",
+          "number": "34",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 34,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "dc4d4ac0-3ecd-4015-a088-a773d3bd4dfb"
+            }
+          ]
+        },
+        {
+          "id": "c084bb3e-a40c-41aa-9564-c7001d76d80d",
+          "number": "35",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 35,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "c1280070-ceb3-4093-b9a3-61af501b58b1"
+            }
+          ]
+        },
+        {
+          "id": "e602e0e0-d29d-4461-b423-2d7c37487361",
+          "number": "36",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 36,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "3c9d1cb7-13d1-47b1-974e-267ea8d0eae9"
+            }
+          ]
+        },
+        {
+          "id": "1a4e2ffe-3900-4cc5-a752-95778babc5bc",
+          "number": "37",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 37,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "наличка",
+                "деньги": 300,
+                "Провели продажу": true
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "1df7ed56-52d2-4fa3-bafa-fbf9fbf7fb45"
+            }
+          ]
+        },
+        {
+          "id": "f044730d-f351-4ead-9920-31fcb312a6e6",
+          "number": "38",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 38,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "fca6104a-4a4d-4a52-9626-b907def47dc8"
+            }
+          ]
+        },
+        {
+          "id": "1c1cc0ea-d72e-4647-9cee-7290e1d58ec1",
+          "number": "39",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 39,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6ad04dc2-421c-4a83-944a-a65452e0a1bc"
+            }
+          ]
+        },
+        {
+          "id": "3e547d8d-583f-4d3a-954b-9a60ae262a23",
+          "number": "40",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 40,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "093adabc-214d-42bd-8f79-0ee8a8397321"
+            }
+          ]
+        },
+        {
+          "id": "51ee7a4b-afe1-4738-8202-4d968aeffb3d",
+          "number": "41",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 41,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f971fdb5-e34c-40d7-a653-dfdb5e0f8443"
+            }
+          ]
+        },
+        {
+          "id": "4cbcd68b-2023-4644-ba72-ecd770454165",
+          "number": "42",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 42,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "a706cab9-9ed6-4250-b883-ec4d1d7ec84b"
+            }
+          ]
+        },
+        {
+          "id": "1b708c08-f449-4772-b0cc-16a8e65227e4",
+          "number": "43",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 43,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "4af3d11b-5173-442b-9f60-c80f99d27e15"
+            }
+          ]
+        },
+        {
+          "id": "b5194779-8c0b-4e92-bb4d-9a405a200fa5",
+          "number": "44",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 44,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bf7891de-dc60-4e3f-bab4-c1d13a642a06"
+            }
+          ]
+        },
+        {
+          "id": "9713edee-7260-4e72-95ca-7495fc74edde",
+          "number": "45",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 45,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "56e807e2-2c1b-4d3f-b053-1ce06648a24b"
+            }
+          ]
+        },
+        {
+          "id": "8259967f-db93-43d6-805b-f79f3ba01f38",
+          "number": "46",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 4,
+                "№ квартиры": 46,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "8dd6c8b4-1e46-4adf-966c-e6c3964f3ee7"
+            }
+          ]
+        },
+        {
+          "id": "2109cad5-a58e-41b6-bbcf-59c13ab80b71",
+          "number": "47",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 47,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "33521ef8-64cd-44ad-817d-b87e67dd8cbd"
+            }
+          ]
+        },
+        {
+          "id": "2c2c1f68-260d-4d39-8073-c0c7aafe4fef",
+          "number": "48",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 48,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "4c687c84-64a9-4b09-84cc-3675c091ac76"
+            }
+          ]
+        },
+        {
+          "id": "fe3ea9ab-3fa1-4dfa-acc1-704ad95dad42",
+          "number": "49",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 49,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 4,
+                "выпущено ключей": 4,
+                "выдано ключей": 4,
+                "сумма": 1200,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bbee059c-1259-4cb3-9dc2-ec69dc380d03"
+            }
+          ]
+        },
+        {
+          "id": "ee5c60d5-9d78-4a71-b42a-26f176e50b9d",
+          "number": "50",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 50,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "d7040248-8efc-4963-9bf9-acb1d99f583f"
+            }
+          ]
+        },
+        {
+          "id": "3d9fe3f3-de9f-46f8-86f7-41cf81e55535",
+          "number": "51",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 51,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "наличка",
+                "деньги": 600,
+                "Провели продажу": true
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "656f1333-9efb-42ce-b7c4-3b161d0e28df"
+            }
+          ]
+        },
+        {
+          "id": "a160fd0f-ad8a-4903-8945-ba838cced8c2",
+          "number": "52",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 52,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "комментарии": "оставил в почтовом ящике",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bde81b0e-3de6-476f-93ab-4557dc360766"
+            }
+          ]
+        },
+        {
+          "id": "2dd20973-0456-4ad8-9fa0-038f51ab03bd",
+          "number": "53",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 53,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "комментарии": "оставил в почтовом ящике 1 ключ",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9960aa93-cdad-4f46-b8eb-0d027fe7b391"
+            }
+          ]
+        },
+        {
+          "id": "7af61f93-44d8-46b3-8e13-93945139cd58",
+          "number": "54",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 54,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "04752b29-6a83-436b-8f75-a1fd7e2ea97c"
+            }
+          ]
+        },
+        {
+          "id": "6d81d331-642e-4046-87b3-de43c58b1d0b",
+          "number": "55",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 55,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "ff6867d0-ea75-4c4d-9390-c1f99ff499b1"
+            }
+          ]
+        },
+        {
+          "id": "094c9d1a-728a-484a-a393-e70d34e03b53",
+          "number": "56",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 56,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "e12b60aa-dd88-4bea-88d4-6e03d767dcba"
+            }
+          ]
+        },
+        {
+          "id": "37251666-d62f-404d-8854-69ef38df878b",
+          "number": "57",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 57,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "cb9da70d-9a56-418f-be23-ab0d7c3ce184"
+            }
+          ]
+        },
+        {
+          "id": "fe4a0fe6-4f23-4271-ac89-ac6e74b299e6",
+          "number": "58",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 5,
+                "№ квартиры": 58,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "наличка",
+                "деньги": 600,
+                "Провели продажу": true
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "b5e78bbd-7e25-4476-9bab-1873e57400c2"
+            }
+          ]
+        },
+        {
+          "id": "6e6d9f7e-4d64-4e3b-a6eb-fb8590210f96",
+          "number": "59",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 59,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "04df40f9-693b-47d6-947c-3db35edec6a7"
+            }
+          ]
+        },
+        {
+          "id": "5609471d-c984-4a58-b81b-f744e7cda463",
+          "number": "60",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 60,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6ba1fb88-7ef3-41b2-ba6d-b9a48d0446b8"
+            }
+          ]
+        },
+        {
+          "id": "9a9a7e44-db34-421b-a434-06bb8fc86122",
+          "number": "61",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 61,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "4c8dab84-af15-4447-8db6-b759692ff815"
+            }
+          ]
+        },
+        {
+          "id": "8ff29616-2003-4ff7-a88a-457c1b0dcb76",
+          "number": "62",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 62,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "75930a8f-780e-40d4-8d94-3a514e33097a"
+            }
+          ]
+        },
+        {
+          "id": "ba22128e-8a62-4b7e-8cde-34e62d564791",
+          "number": "63",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 63,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "1c2a8db0-1be3-444d-8948-fcab9b254673"
+            }
+          ]
+        },
+        {
+          "id": "a7c1def8-666a-493d-a7f4-2ab6e3b85829",
+          "number": "64",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 64,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "a84e8383-a472-4883-a142-9bd41f3b4c35"
+            }
+          ]
+        },
+        {
+          "id": "9b28dfb6-e901-4484-ab84-cef3c4f5bfe7",
+          "number": "65",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 65,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "561e155c-8024-47ec-bc63-b4cd01b450eb"
+            }
+          ]
+        },
+        {
+          "id": "dc15a9d1-36ad-4e6c-9409-e4e4778abef9",
+          "number": "66",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 66,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "64dcb934-9bbf-4601-a005-2321a0b0942e"
+            }
+          ]
+        },
+        {
+          "id": "40765de3-85af-4009-bb9a-bfb9acc11c48",
+          "number": "67",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 67,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "2a3b7ae2-f236-4ae3-a35e-1c1e322e7d35"
+            }
+          ]
+        },
+        {
+          "id": "9268466b-9c90-4799-bb3d-b44406ef21fa",
+          "number": "68",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 68,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "b5b1cc97-c93d-44f3-a30a-7568cf3817f4"
+            }
+          ]
+        },
+        {
+          "id": "c1ac51b9-266e-4bb8-9883-fcc0ecd6f22e",
+          "number": "69",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 69,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "e50f0d81-9660-4740-8b83-243f1624505c"
+            }
+          ]
+        },
+        {
+          "id": "e364a7b9-5f13-4815-83cb-38b116c90c5f",
+          "number": "70",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 6,
+                "№ квартиры": 70,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6d358cc2-6283-4ec7-91fa-b2dc5577f617"
+            }
+          ]
+        },
+        {
+          "id": "7d8b1f0b-50c3-4617-9c6c-726bc1e8e24e",
+          "number": "71",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 71,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "dfea3b12-c828-4965-bd39-4bbdf9c6d71b"
+            }
+          ]
+        },
+        {
+          "id": "57c25618-368e-465e-9ca9-a40fcee67db4",
+          "number": "72",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 72,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "767b0f82-1b0a-4434-b7cd-864017281d83"
+            }
+          ]
+        },
+        {
+          "id": "043b3a4f-2c09-4e7b-9869-60b3af0fd398",
+          "number": "73",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 73,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "8562c73c-e66b-4bd3-b4d0-7abec9aa7b63"
+            }
+          ]
+        },
+        {
+          "id": "78e39f81-fadc-4ca0-a0d5-f83191634925",
+          "number": "74",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 74,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 4,
+                "выпущено ключей": 4,
+                "выдано ключей": 4,
+                "сумма": 1200,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "39a052d9-bc36-4abc-89b9-7be24a57e8d4"
+            }
+          ]
+        },
+        {
+          "id": "9c2132d9-faff-48b1-beaf-455071f139c9",
+          "number": "75",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 75,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "7c957c87-2010-442a-a3fc-8d22899dfb2a"
+            }
+          ]
+        },
+        {
+          "id": "24020b31-ca87-403a-b769-de860efbc354",
+          "number": "76",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 76,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "a58223ce-4404-4c0f-bcfd-4d6c03194991"
+            }
+          ]
+        },
+        {
+          "id": "6b72533c-649d-492a-9539-c169b2315420",
+          "number": "77",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 77,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "наличка",
+                "деньги": 300,
+                "Провели продажу": true
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "14432c30-74e2-4960-bcfe-142bff462b3d"
+            }
+          ]
+        },
+        {
+          "id": "168b8a63-b38b-487f-b34c-fc4fa95b84ea",
+          "number": "78",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 78,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "872ff0ca-edbe-47b3-ac23-26fa630056d8"
+            }
+          ]
+        },
+        {
+          "id": "2b691b12-828e-4ce7-a48b-f10c66c5b357",
+          "number": "79",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 79,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "315fe076-10b7-4800-be4c-b4a00152f276"
+            }
+          ]
+        },
+        {
+          "id": "cb3f22a0-aadc-40eb-9ff4-1969e7061fa3",
+          "number": "80",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 80,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9e7e359a-cde2-47d0-b06c-e38b1406096a"
+            }
+          ]
+        },
+        {
+          "id": "2913aedd-1c19-4a8c-99a5-2b737df70c3d",
+          "number": "81",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 81,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "наличка",
+                "деньги": 900,
+                "Провели продажу": true
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "ee41a9a1-c2a1-4e8f-8d7d-6fc7db2bc219"
+            }
+          ]
+        },
+        {
+          "id": "8b05f884-28f1-4a01-acfc-1ecb7eff1757",
+          "number": "82",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 82,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "08f3540b-ad2c-49d0-85ed-bcd5e77446cf"
+            }
+          ]
+        },
+        {
+          "id": "81b83016-6e30-4a32-b1d4-017a2b208cd3",
+          "number": "83",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 83,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "983b80b3-01ff-4fd1-9a38-cc76412d001e"
+            }
+          ]
+        },
+        {
+          "id": "cc0a71c8-9a56-4080-9406-b0e3f2f01040",
+          "number": "84",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 84,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "66ff08d1-a265-49cc-a88b-c567c551e540"
+            }
+          ]
+        },
+        {
+          "id": "2902cba5-bce9-42a1-bd8a-59d8aaef3492",
+          "number": "85",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 7,
+                "№ квартиры": 85,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "616d1412-fb34-476c-a3de-e2f95711ceb7"
+            }
+          ]
+        },
+        {
+          "id": "d2653cfe-a495-4276-81a6-750f9537d364",
+          "number": "86",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 86,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "82df06fd-e069-46c7-9ebe-da5815b3d6dd"
+            }
+          ]
+        },
+        {
+          "id": "10bfd3be-7065-4dbc-80e0-6341afc81921",
+          "number": "87",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 87,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bc4ad6f1-1d2b-42c1-b585-8e7232f4bb9d"
+            }
+          ]
+        },
+        {
+          "id": "c8449717-5289-44f3-958b-d3ffca6baf13",
+          "number": "88",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 88,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bdcdbf2b-3f7a-4d49-b374-a1c5cceb986b"
+            }
+          ]
+        },
+        {
+          "id": "8b842261-e038-4203-8048-0045a1dcb74c",
+          "number": "89",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 89,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "93d0c88e-78b1-4c90-83d0-0dea35eae011"
+            }
+          ]
+        },
+        {
+          "id": "509d4ba3-fcbf-4f10-9cf6-88c2fd5f81d9",
+          "number": "90",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 90,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "327d78ba-0a75-4950-bb85-ca409aaf6c74"
+            }
+          ]
+        },
+        {
+          "id": "bb082e8f-d34c-40a7-9b98-bac26e6c7462",
+          "number": "91",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 91,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "d982f1a6-2fc0-4d6f-9c7b-592f0369a16f"
+            }
+          ]
+        },
+        {
+          "id": "b7fc64c1-3f65-4162-8c96-cbd324718374",
+          "number": "92",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 92,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "d87fc3ae-76db-416f-b27d-76a6ed714356"
+            }
+          ]
+        },
+        {
+          "id": "e03a572a-75e1-459d-beca-f05821a79cfa",
+          "number": "93",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 93,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "b379c640-4856-4c61-8cd6-7d2631c2c49b"
+            }
+          ]
+        },
+        {
+          "id": "1c8de09f-a674-4d43-b83c-0a799a8c576c",
+          "number": "94",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 8,
+                "№ квартиры": 94,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "7e9ff391-209b-41ff-87e8-2b244017b57e"
+            }
+          ]
+        },
+        {
+          "id": "1d9ece25-2e5b-43d9-b7ac-3cd669e825e3",
+          "number": "95",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 95,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "041ac4e4-caad-4985-92a0-92bcddd3fa94"
+            }
+          ]
+        },
+        {
+          "id": "240bdde9-637d-4aba-a85d-fb1b381b4afc",
+          "number": "96",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 96,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9ffbef38-97c1-4c72-b7ad-9a0580b5cf61"
+            }
+          ]
+        },
+        {
+          "id": "2edc890a-d575-403a-9a61-83b12e668597",
+          "number": "97",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 97,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "0c856226-9222-47f2-a130-8df0716a9624"
+            }
+          ]
+        },
+        {
+          "id": "0af47d82-c60e-4c1b-b319-5d94ff5c76bf",
+          "number": "98",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 98,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "карта",
+                "деньги": 300,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "205d0e1e-fc61-4050-bdce-a4e7217533e7"
+            }
+          ]
+        },
+        {
+          "id": "d4133d60-5640-440a-91cf-a5c00a5aaa00",
+          "number": "99",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 99,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "4eef4b57-d2a5-4f00-b060-a81f15d64aa0"
+            }
+          ]
+        },
+        {
+          "id": "c473978b-9718-47eb-8fae-169b6c5efa9f",
+          "number": "100",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 100,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "31fadc5c-2aac-422a-af49-4443372417a5"
+            }
+          ]
+        },
+        {
+          "id": "f9cc5043-3612-45d1-a5ec-e66ad6834bd3",
+          "number": "101",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 101,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "42ba42c8-7ce6-4220-85ea-0e674fc857ee"
+            }
+          ]
+        },
+        {
+          "id": "03c00b81-1c06-4e1b-94a6-fc88fa6040f5",
+          "number": "102",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 102,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "df26fabe-e959-4e51-bf6d-8261b213e574"
+            }
+          ]
+        },
+        {
+          "id": "75e64fb8-a1d6-456a-bd34-1fa260eef38e",
+          "number": "103",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 103,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "676e47f8-6ddd-441f-9a0d-84ddbd9f7ae7"
+            }
+          ]
+        },
+        {
+          "id": "7c2b9442-9a5e-4346-ba4f-fc7ba4e1588b",
+          "number": "104",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 104,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "сумма": "",
+                "комментарии": "Нет в городе примерно до конца июня",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "0df8cfe1-aa0f-4688-955d-21ed5642fd78"
+            }
+          ]
+        },
+        {
+          "id": "a2aa87c9-a7ba-4d50-992e-cd79bd86510f",
+          "number": "105",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 105,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "40710d34-c34f-40f3-b417-2488b8d03a06"
+            }
+          ]
+        },
+        {
+          "id": "52e6869e-d090-489a-8421-a6422952e754",
+          "number": "106",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 106,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6d56837c-752d-4be2-a19f-88595a1fbd35"
+            }
+          ]
+        },
+        {
+          "id": "25eb240d-761c-4d81-a44a-cb1f29ecc6ef",
+          "number": "107",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 107,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "318969df-ba4c-476a-a0bc-e4226b5a72dd"
+            }
+          ]
+        },
+        {
+          "id": "84f680dd-0049-4d9f-bb4f-771d8c5de08a",
+          "number": "108",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 108,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "31848810-7ab3-4f8f-9dd3-f2442fa0b868"
+            }
+          ]
+        },
+        {
+          "id": "f5bba196-3480-49f0-9f4d-e98dc283c5e0",
+          "number": "109",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 109,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "22dcbef5-90d8-4c0e-b541-417faf37b2ea"
+            }
+          ]
+        },
+        {
+          "id": "6ff86cdd-520a-4595-a938-59b5657dd9bb",
+          "number": "110",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 110,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "41c4d137-b05f-4a10-be83-465b2a4baa35"
+            }
+          ]
+        },
+        {
+          "id": "ce3377b2-aef4-4e76-8066-b62b86c5f47a",
+          "number": "111",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 111,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "526d1d57-c9f1-49be-8cd3-202b10c734fc"
+            }
+          ]
+        },
+        {
+          "id": "1bc96fa3-4a3d-4768-a19d-98c9be4543ae",
+          "number": "112",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 112,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "604a7b80-9fdc-4bf0-b8fa-3ede15c0f539"
+            }
+          ]
+        },
+        {
+          "id": "36de1399-bf81-4e07-aa92-c026eefc6b55",
+          "number": "113",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 113,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "58e8f92c-4ac1-4736-83a2-39cc38eb093a"
+            }
+          ]
+        },
+        {
+          "id": "16809b70-a2fd-43d6-b39f-e83e8b80ec88",
+          "number": "114",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 9,
+                "№ квартиры": 114,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "комментарии": "Ключи отдал Виктории 127кв. НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "26ae8230-eadb-46e9-ade6-d7106c836327"
+            }
+          ]
+        },
+        {
+          "id": "cf96268d-a184-4f7a-a08d-2e727634fb57",
+          "number": "115",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 115,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "комментарии": "Ключи отдал Виктории 127кв",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "10d4ed43-b821-486e-9b93-da8628319186"
+            }
+          ]
+        },
+        {
+          "id": "71ec5bbe-99e2-4d42-ad6b-69ff26f4506e",
+          "number": "116",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 116,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "768f2446-eacd-40a9-85f6-5da0b7ef974e"
+            }
+          ]
+        },
+        {
+          "id": "5df4e382-1111-4130-852d-a5d75367a6b6",
+          "number": "117",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 117,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "5eb258ec-a583-4253-a066-d880d8e6def7"
+            }
+          ]
+        },
+        {
+          "id": "0f2553c4-7ed6-42aa-9365-8d479ebc7a8c",
+          "number": "118",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 118,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "0747ca2d-b092-4533-a710-753a7a0d4a53"
+            }
+          ]
+        },
+        {
+          "id": "fee85053-2b4a-4821-86c5-87eb479e0e80",
+          "number": "119",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 119,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "d7c5d53a-82a7-4344-b124-8d49ce9b0603"
+            }
+          ]
+        },
+        {
+          "id": "22902f4d-7a93-48ac-984f-8103fc51aa16",
+          "number": "120",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 120,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "534aa690-c486-4cd7-a1a8-3bee56cd155c"
+            }
+          ]
+        },
+        {
+          "id": "f82d0e52-bf7b-4149-882b-16fb65a3cf55",
+          "number": "121",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 121,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "ed4278ab-dbca-41cc-80ee-750b9efeab8f"
+            }
+          ]
+        },
+        {
+          "id": "d6cdf5d9-2cdc-4c94-9bbd-96f7826fd5c0",
+          "number": "122",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 122,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "884bd4d0-42f9-44da-ab41-09b3571fb169"
+            }
+          ]
+        },
+        {
+          "id": "721e3fc4-83ac-42a6-a904-1938e523537a",
+          "number": "123",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 123,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "8ecf0577-738f-4b40-aef2-8893d1e449f6"
+            }
+          ]
+        },
+        {
+          "id": "40efdcce-7d52-4f41-8586-b1f9ad0ad1af",
+          "number": "124",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 124,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f3ce7dae-be6b-4adb-91ab-6516faa07f47"
+            }
+          ]
+        },
+        {
+          "id": "5ad7fced-4559-47ff-aed7-4d09f025498c",
+          "number": "125",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 125,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6130f6d0-5096-45af-89cf-17c64c987bc6"
+            }
+          ]
+        },
+        {
+          "id": "c7799b00-3246-4931-a2e5-e4054e1ebfcf",
+          "number": "126",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 126,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "8f1d134f-2196-403b-940a-4430772e7410"
+            }
+          ]
+        },
+        {
+          "id": "25881a6f-883c-4786-afc2-8ae576065cd0",
+          "number": "127",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 127,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "400de58e-c727-4531-88eb-d9e7299b67f3"
+            }
+          ]
+        },
+        {
+          "id": "90dec0ee-dc37-4321-80c6-49de97418df1",
+          "number": "128",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 128,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "карта",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "37653855-e9fb-48bf-8723-9baf081daf2e"
+            }
+          ]
+        },
+        {
+          "id": "54e31dbc-4876-43c4-b6e7-a6d4222b1918",
+          "number": "129",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 129,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "887df9a8-c3a6-46c4-99f6-a6dee4238b24"
+            }
+          ]
+        },
+        {
+          "id": "9f1361d9-d385-4de5-b48c-ef33f287c83f",
+          "number": "130",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 130,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "fca7ab27-0f95-48ea-953f-4157229edffb"
+            }
+          ]
+        },
+        {
+          "id": "ba86a60f-9f18-4fc0-8098-a390c6930a03",
+          "number": "131",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 131,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "5c6ae5bb-9012-423d-81bf-fd84373b030a"
+            }
+          ]
+        },
+        {
+          "id": "440d6151-02da-4364-8eea-6136497e38d0",
+          "number": "132",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 132,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "055afddf-504f-48c3-96d8-01ba4e62128f"
+            }
+          ]
+        },
+        {
+          "id": "130c4f09-75d6-4d68-bd24-e223ab04183c",
+          "number": "133",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 133,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f409f124-614d-4b41-94ae-7c241fa72e79"
+            }
+          ]
+        },
+        {
+          "id": "63809178-3fb3-4527-96df-6d977c515c6d",
+          "number": "134",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 10,
+                "№ квартиры": 134,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "c921aa52-db87-46ae-981c-3751df60e0cd"
+            }
+          ]
+        },
+        {
+          "id": "d3b8cdb4-aedf-49be-885a-896db93ff04e",
+          "number": "135",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 135,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "карта",
+                "комментарии": "основные и дополнительные ключи отдать Геворгу",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "347ad6e7-4da8-454c-aa0b-beb9cb1f0167"
+            }
+          ]
+        },
+        {
+          "id": "2e52176a-848c-4f43-ac65-8025562cc981",
+          "number": "136",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 136,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "7d54ef73-58ae-4469-ac6d-3cb683b18c13"
+            }
+          ]
+        },
+        {
+          "id": "e18f5f27-14d0-4c41-9b56-2033f7aafa96",
+          "number": "137",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 137,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "05bcdb6c-a850-4594-9c62-fd563e06742a"
+            }
+          ]
+        },
+        {
+          "id": "28c03890-6b4a-4ee8-8846-e7da82f09e74",
+          "number": "138",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 138,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f9fe176c-9c10-41ac-a903-dc39eeafb649"
+            }
+          ]
+        },
+        {
+          "id": "726e7c19-4605-4a6b-b320-3dccfd514e3d",
+          "number": "139",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 139,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "d7699438-0ccd-421c-8111-831c762b7e22"
+            }
+          ]
+        },
+        {
+          "id": "a3aee6ec-7567-4e71-a0ba-5242373317d8",
+          "number": "140",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 140,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "2360439f-b5b5-4038-8b24-29b0143b2d70"
+            }
+          ]
+        },
+        {
+          "id": "e952c6a9-8c96-4bd3-a4ec-34cf1dd04d13",
+          "number": "141",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 141,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 4,
+                "выпущено ключей": 4,
+                "сумма": "",
+                "оплата": "договор",
+                "комментарии": "ключи оплачены по договору, но не забраны",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "071ddd0b-cb13-4fc6-b019-4842a4a7ad72"
+            }
+          ]
+        },
+        {
+          "id": "9075a559-b7c1-44af-8739-b7bc5e1d0ee0",
+          "number": "142",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 142,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "2ccb20e9-bb0b-4cd2-a021-8aa75dd32b8f"
+            }
+          ]
+        },
+        {
+          "id": "2207e1d7-b9b6-410e-a01f-1a5645012b3d",
+          "number": "143",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 143,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "10f1adf8-85c7-44de-9fca-661e488d8466"
+            }
+          ]
+        },
+        {
+          "id": "0a5be8f9-fbcd-470a-8447-82d0be7fa51b",
+          "number": "144",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 144,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6ec66faa-1ba2-4eb5-89d6-fa2aed0f6262"
+            }
+          ]
+        },
+        {
+          "id": "dd2151a7-c883-41b6-8690-9b4fea73337d",
+          "number": "145",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 145,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "210e22f1-72d3-4067-bd7c-b911dabd7c9e"
+            }
+          ]
+        },
+        {
+          "id": "3a2b03d4-a87d-48cf-bdb9-53586b60fc07",
+          "number": "146",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 146,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "36845785-f561-466f-a612-3a2a7c4efa2a"
+            }
+          ]
+        },
+        {
+          "id": "26fe2df5-afba-42ff-8edd-4e0ec91d2aaf",
+          "number": "147",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 147,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "4b23f8b6-fd41-4a5f-99e0-f80c48a9575a"
+            }
+          ]
+        },
+        {
+          "id": "4fa0844a-79a0-44cd-86ba-f98b064241bf",
+          "number": "148",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 148,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "37a3d4b7-3451-469e-8cb5-e28d03721907"
+            }
+          ]
+        },
+        {
+          "id": "c7d94c16-2cbb-4fe4-a016-c66b8274191d",
+          "number": "149",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 149,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "8ceb6cbe-ea68-45b6-a00c-66ec915a2146"
+            }
+          ]
+        },
+        {
+          "id": "97ae8630-5cd9-4ca1-b90a-95a2696133d8",
+          "number": "150",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 11,
+                "№ квартиры": 150,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "22735c1c-d29d-4157-9938-d6380158a034"
+            }
+          ]
+        },
+        {
+          "id": "5e875c05-a45f-4e1a-b58d-7bcbcd17bc9a",
+          "number": "151",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 151,
+                "сумма": "",
+                "комментарии": "ключи от его квартиры и домофона  у меня",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f5e88217-c97a-432a-8e09-a6a028400bf3"
+            }
+          ]
+        },
+        {
+          "id": "d4e9cef1-8f17-4eb1-a304-b04e82ed1280",
+          "number": "152",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 152,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 1,
+                "выпущено ключей": 1,
+                "выдано ключей": 1,
+                "сумма": 300,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "3cfb70d2-1457-401e-8696-6e99ebffc950"
+            }
+          ]
+        },
+        {
+          "id": "0a88b960-cd9f-4133-81b9-4cc1da206fb4",
+          "number": "153",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 153,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "3b96db54-824f-4c17-bb70-70d652fbe02a"
+            }
+          ]
+        },
+        {
+          "id": "c76e0882-143e-4756-b248-8282d94844f8",
+          "number": "154",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 154,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bb05175b-e8de-4097-a6b0-fbb0e0e85958"
+            }
+          ]
+        },
+        {
+          "id": "aec1bd1e-a995-4eac-9f05-d9125d27150c",
+          "number": "155",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 155,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9cbd14a4-1af3-4562-a62d-5a38ce9f2a22"
+            }
+          ]
+        },
+        {
+          "id": "abf524fb-456e-48b8-a09d-817c4d3c4bd1",
+          "number": "156",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 156,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "07678a46-e349-4ecf-9224-164afd1cd1a4"
+            }
+          ]
+        },
+        {
+          "id": "74717add-ef39-4554-97b2-4f62a1cb24f9",
+          "number": "157",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 157,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "комментарии": "оставил в почтовом ящике",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f12626ef-37df-4c01-807b-8cf692c91675"
+            }
+          ]
+        },
+        {
+          "id": "90a7caa8-d109-4daf-accd-a78d26e17f73",
+          "number": "158",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 158,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "0f4c7911-5805-4c7f-9bcd-da67fb15f6b8"
+            }
+          ]
+        },
+        {
+          "id": "69c2f421-a3f8-4b02-afb1-bf08adfc3662",
+          "number": "159",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 159,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "карта",
+                "комментарии": "на карту Сергею",
+                "деньги": 600,
+                "Провели продажу": true
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "b914fdbf-b27c-4d8e-a0a6-1fe5b0821a56"
+            }
+          ]
+        },
+        {
+          "id": "aec2ac33-44bf-4c2d-af51-b0bb80f318ac",
+          "number": "160",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 160,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9ffb4a24-a00f-4322-a47c-6ef38194d2f0"
+            }
+          ]
+        },
+        {
+          "id": "70912a64-dc33-4956-866f-5bba79ab6d44",
+          "number": "161",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 161,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "5fc93717-b042-43c3-874c-22ab988f7c40"
+            }
+          ]
+        },
+        {
+          "id": "db9e924c-c627-4b7c-98d8-559e2a12dbf8",
+          "number": "162",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 162,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "45b7ccaf-1e3a-4d1c-a307-1eeec4afa2c7"
+            }
+          ]
+        },
+        {
+          "id": "12308ce8-8393-44e2-b70d-8b3d1bf09df7",
+          "number": "163",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 163,
+                "выпущено ключей": 1,
+                "сумма": "",
+                "комментарии": "нет данных, кто заказывал",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "297183a2-1a3d-4b8d-aef0-730520b900bd"
+            }
+          ]
+        },
+        {
+          "id": "93bed098-905d-46d4-a19d-11553fa1da82",
+          "number": "164",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 164,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "47eaf5a5-a871-48bc-a60f-b2c8edc8d79b"
+            }
+          ]
+        },
+        {
+          "id": "74e3c6f6-61c8-43cc-9e73-fe9e3e50af3c",
+          "number": "165",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 165,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "5305a848-08fa-49d7-853a-322eec680cc3"
+            }
+          ]
+        },
+        {
+          "id": "688ba6c3-6db1-40f6-8e2a-49031e7d63f0",
+          "number": "166",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 166,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "5cdac23e-ac55-4c70-9e12-405aedb462b5"
+            }
+          ]
+        },
+        {
+          "id": "87074dbd-5a2f-412b-b90a-014bb837c961",
+          "number": "167",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 167,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "e04b2516-77f6-467d-81a7-4d047f881490"
+            }
+          ]
+        },
+        {
+          "id": "818dafa5-1c6b-4e1d-898d-942859f1f2e3",
+          "number": "168",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 168,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "сумма": "",
+                "оплата": "карта",
+                "комментарии": "Оплачены, но не забраны",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "a06d92fb-bc7c-4d1f-b766-eeead1586a89"
+            }
+          ]
+        },
+        {
+          "id": "b6f22364-a842-4e1f-a84f-4d4309d95c3d",
+          "number": "169",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 169,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f4b8f501-903a-4bc8-bd3e-fc1226570686"
+            }
+          ]
+        },
+        {
+          "id": "86b163dc-0152-4125-903b-e931cb01b83c",
+          "number": "170",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 12,
+                "№ квартиры": 170,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "c85a7e47-f4e7-4ea4-84a2-1da529fc2467"
+            }
+          ]
+        },
+        {
+          "id": "e34e4f6b-4c51-486c-bab8-96555c87aa52",
+          "number": "171",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 171,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "edd04374-9662-4046-929f-b95f80eece0b"
+            }
+          ]
+        },
+        {
+          "id": "eb719ee7-5eb3-4500-9adb-7abda1b4d573",
+          "number": "172",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 172,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bc028937-e498-4d9d-8f97-003da7fe05f0"
+            }
+          ]
+        },
+        {
+          "id": "a5989257-8b98-4c7f-87fc-bfadd8ad3f8d",
+          "number": "173",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 173,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "999b9d7c-22ab-4f3b-9e44-09eebf6e6116"
+            }
+          ]
+        },
+        {
+          "id": "d67a717d-07a3-4559-986f-31a7356e1101",
+          "number": "174",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 174,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "8ca8437d-7526-465d-90e7-3444ccb41078"
+            }
+          ]
+        },
+        {
+          "id": "b9178864-5f69-44fd-a00c-13e43c60676d",
+          "number": "175",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 175,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "01237584-57c9-492b-bf17-590deb9589f5"
+            }
+          ]
+        },
+        {
+          "id": "c8a51c6e-18c0-49f1-a3bb-0f5a8900714d",
+          "number": "176",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 176,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "0c112f1c-2a89-4f08-949f-1598ddd3973a"
+            }
+          ]
+        },
+        {
+          "id": "0c047f54-d7be-4852-a914-92618bc7ff8e",
+          "number": "177",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 177,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "89fd1cf9-7755-4b24-a489-73502433fa25"
+            }
+          ]
+        },
+        {
+          "id": "65056fae-534f-4c68-8915-e33233413831",
+          "number": "178",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 178,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "a183de63-0839-482c-97ad-3768aec4bc97"
+            }
+          ]
+        },
+        {
+          "id": "103fe310-036a-45e1-9dd8-f276133341cb",
+          "number": "179",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 179,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "1240f417-897d-4e60-85bb-87a12c9e6127"
+            }
+          ]
+        },
+        {
+          "id": "531db1e2-fd99-48e9-9244-3466d00af64d",
+          "number": "180",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 180,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "40656842-ce95-4da4-90a1-afe26b78dace"
+            }
+          ]
+        },
+        {
+          "id": "054abf38-66b2-40b3-86c2-1fa1e501c5f1",
+          "number": "181",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 181,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "1be33822-2d98-40ea-ad9e-9cc0a5913e55"
+            }
+          ]
+        },
+        {
+          "id": "55298840-97f4-400e-ae6b-6f354adf4901",
+          "number": "182",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 13,
+                "№ квартиры": 182,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "aee7689a-f089-4956-975c-c00121fff553"
+            }
+          ]
+        },
+        {
+          "id": "ab236740-f528-4437-b65b-bcc027f979fd",
+          "number": "183",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 183,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f5445b85-b444-4371-a033-6b38f2df8533"
+            }
+          ]
+        },
+        {
+          "id": "e801adc6-7d87-40da-9031-a256d24b2d12",
+          "number": "184",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 184,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "ee8b990e-d8b7-49b6-a71d-b42780d083a0"
+            }
+          ]
+        },
+        {
+          "id": "dedd9b5b-1a60-481e-a878-701de3600ab8",
+          "number": "185",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 185,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "624bff83-2dda-414a-b119-ba2f46bc1da5"
+            }
+          ]
+        },
+        {
+          "id": "edb04af4-df01-42d5-9d49-692b291cef6a",
+          "number": "186",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 186,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "237c04d0-5116-4864-9480-75425fc6b8c4"
+            }
+          ]
+        },
+        {
+          "id": "49e64cf4-344c-4bac-b80a-0b43cb6394cc",
+          "number": "187",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 187,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "01029ba4-28bd-4082-ad31-ac2bcd2ddf9f"
+            }
+          ]
+        },
+        {
+          "id": "fe6e5ef0-be5c-4d2c-8578-a25599a5c744",
+          "number": "188",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 188,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "3f550057-6d01-49dd-bcf6-fa8fe8450505"
+            }
+          ]
+        },
+        {
+          "id": "d68b0fbc-e93e-49a1-a4fc-14c090e6eb44",
+          "number": "189",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 189,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "7ae71983-c05c-46fb-b9dc-f08eea320150"
+            }
+          ]
+        },
+        {
+          "id": "e073275a-d0de-4773-a595-59b947b256a5",
+          "number": "190",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 190,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "57696f29-21d2-46b7-9734-44d22e7ba930"
+            }
+          ]
+        },
+        {
+          "id": "1346d831-6f2d-4436-b762-22a3a61a0be3",
+          "number": "191",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 191,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "9c5adb44-1260-43e2-b470-aab45a3acc63"
+            }
+          ]
+        },
+        {
+          "id": "e6f9dfc2-025e-4b55-95f9-212173420ac3",
+          "number": "192",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 192,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "ea547da1-c3b9-40f5-8227-c05399d3fdb7"
+            }
+          ]
+        },
+        {
+          "id": "4434ea32-0851-484c-abbd-230c191e10a4",
+          "number": "193",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 193,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "карта",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "16850839-2d82-4a46-91c9-a773f0e17ec5"
+            }
+          ]
+        },
+        {
+          "id": "b1089da1-fe39-4f23-95e6-4544735711de",
+          "number": "194",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 194,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "выпущено ключей": 1,
+                "сумма": "",
+                "комментарии": "нет данных кто заказывал",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "ca2d2757-e6cd-4f30-ad65-3d2ccdde1216"
+            }
+          ]
+        },
+        {
+          "id": "0a97f199-e493-4f6e-9c98-956c67fc49e8",
+          "number": "195",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 195,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "bb28552f-9058-456a-9430-6043aa74c7a8"
+            }
+          ]
+        },
+        {
+          "id": "097c9087-dc19-445d-ac66-6ba99b59f75d",
+          "number": "196",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 196,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "1c665ade-f3a0-4e84-b9d5-1983583a182b"
+            }
+          ]
+        },
+        {
+          "id": "95976f95-24f4-416b-9305-823c4d1bdbdb",
+          "number": "197",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 14,
+                "№ квартиры": 197,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "456522fa-7073-4d38-892b-0100b695cdea"
+            }
+          ]
+        },
+        {
+          "id": "426ec7d6-266d-4ebe-9f7a-f712ffa87720",
+          "number": "198",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 198,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "89e31336-7b56-42bb-a4fb-0bdc7963e006"
+            }
+          ]
+        },
+        {
+          "id": "8afd8428-7029-4f70-9c90-0b5d71b1fcde",
+          "number": "199",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 199,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "e987b489-0027-4717-acdc-5164c5fa7b9e"
+            }
+          ]
+        },
+        {
+          "id": "21586932-8502-4d3b-9ee1-9cb3fcec425e",
+          "number": "200",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 200,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "1fe893e9-2f76-467f-b644-e7b713c9abba"
+            }
+          ]
+        },
+        {
+          "id": "d9e36e28-4c39-412e-9c50-19f90a007cbb",
+          "number": "201",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 201,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 4,
+                "выпущено ключей": 4,
+                "выдано ключей": 4,
+                "сумма": 1200,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "731ab105-98b8-483f-9efa-0177ba66056e"
+            }
+          ]
+        },
+        {
+          "id": "77df7697-942d-4f7a-b353-21190ce8072a",
+          "number": "202",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 202,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6a802ecb-328f-41ff-be6e-1d72c578586f"
+            }
+          ]
+        },
+        {
+          "id": "5143fbf1-a87d-40b8-9141-e0928731a4d9",
+          "number": "203",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 203,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "da532617-5263-48be-9263-db4878ddd5b2"
+            }
+          ]
+        },
+        {
+          "id": "437d1706-e5b9-412d-b32b-bcf7673b89aa",
+          "number": "204",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 204,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "11661466-2328-4ae1-a2c1-e22a504bc8c6"
+            }
+          ]
+        },
+        {
+          "id": "882f8a24-49fc-4bd2-a708-1a48abf820b5",
+          "number": "205",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 205,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "2154bb99-c7f2-4678-9216-09e8ad270bc7"
+            }
+          ]
+        },
+        {
+          "id": "2b6c444c-2327-4c7e-81ca-a59a4e394ff2",
+          "number": "206",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 206,
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "0687f68a-9f98-4756-9712-5f454cb07378"
+            }
+          ]
+        },
+        {
+          "id": "74bb1065-3e36-437e-8ecd-78ce3337fa31",
+          "number": "207",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 207,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "f99f5442-d4f8-4089-a6ba-3540a7c0b71d"
+            }
+          ]
+        },
+        {
+          "id": "e342fb47-5457-44a7-928d-ee6973c27ceb",
+          "number": "208",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 208,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6e428418-073d-4de6-a73b-d91e2605d944"
+            }
+          ]
+        },
+        {
+          "id": "7f681dcf-7c51-4c12-a2fe-5a52ae73785a",
+          "number": "209",
+          "residents": [
+            {
+              "rawData": {
+                "№ подъезда": 15,
+                "№ квартиры": 209,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "a5d21926-5a43-4ce0-a5f1-a977115630cf"
+            }
+          ]
+        },
+        {
+          "id": "9aa4a9f7-1179-40e8-9b11-aacf56ab8143",
+          "number": "210",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 210,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "карта",
+                "комментарии": "у меня на карте",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "7d92d008-cfa6-4610-815b-2a5aca1fd006"
+            }
+          ]
+        },
+        {
+          "id": "964a7cb0-0d2a-42b7-b999-6879125c15d4",
+          "number": "211",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 211,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "комментарии": "подойдёт за ключами 6-7 июня",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "eb1c17ec-0754-4151-a460-dc39b7f30e26"
+            }
+          ]
+        },
+        {
+          "id": "3f69aa99-6873-41b9-a7b9-bc2008c45a47",
+          "number": "212",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 212,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "fbd95a19-eadd-44e9-8998-21c0cb9a60ca"
+            }
+          ]
+        },
+        {
+          "id": "42a69885-93fb-425b-b4bb-e623a9c10dd3",
+          "number": "213",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 213,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "66b8830d-854b-4fb2-b34a-19409724beca"
+            }
+          ]
+        },
+        {
+          "id": "eb6d5075-9518-4d9f-ae8c-ba99baed2b0b",
+          "number": "214",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 214,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "114271db-ec18-4b71-b5ad-c099452f8708"
+            }
+          ]
+        },
+        {
+          "id": "57bc4669-c25c-4d42-820f-e3a36bd9df04",
+          "number": "215",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 215,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "60987ee6-776c-4606-af0f-dd67d4dd1233"
+            }
+          ]
+        },
+        {
+          "id": "654dc3f2-aa0a-4f9a-9c18-0890bbff1e2b",
+          "number": "216",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 216,
+                "наличие договора": "+",
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 3,
+                "выпущено ключей": 3,
+                "выдано ключей": 3,
+                "сумма": 900,
+                "оплата": "договор",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "a2bb40f5-a44a-46b9-93ac-c1843f1478e6"
+            }
+          ]
+        },
+        {
+          "id": "ad19ebda-a45b-4310-bff3-19a9d3ce3a03",
+          "number": "217",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 217,
+                "выданы базовые ключи": "+",
+                "заказано доп. ключей": 2,
+                "выпущено ключей": 2,
+                "выдано ключей": 2,
+                "сумма": 600,
+                "оплата": "карта",
+                "деньги": 600,
+                "Провели продажу": false,
+                "__EMPTY": "нет договора"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "386b8cd6-46de-4234-98ce-71a9e731ae11"
+            }
+          ]
+        },
+        {
+          "id": "77c29aae-d428-45b0-b741-9d6b8d6b1a35",
+          "number": "218",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 218,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "57fb42c7-aa8f-45c3-b66f-1dbf6f9aab4b"
+            }
+          ]
+        },
+        {
+          "id": "a2f5f63f-38ff-4dd6-b548-abded2ef8090",
+          "number": "219",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 219,
+                "выданы базовые ключи": "+",
+                "сумма": "",
+                "Провели продажу": false
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "c21879e8-f1bc-4676-95bd-bbfb52d1d516"
+            }
+          ]
+        },
+        {
+          "id": "dc8dd2e6-bd49-48f2-8b9a-3fd452d2a9f4",
+          "number": "220",
+          "residents": [
+            {
+              "rawData": {
+                "№ квартиры": 220,
+                "сумма": "",
+                "комментарии": "НЕ ПРОДАНА",
+                "Провели продажу": "отдал"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "6a560b03-7090-48f2-a701-7f18d1697824"
+            }
+          ]
+        },
+        {
+          "id": "5e2acb9e-9d7d-413b-9be6-db6301dbad55",
+          "number": "",
+          "residents": [
+            {
+              "rawData": {
+                "комментарии": "У меня осталось:",
+                "деньги": 0,
+                "Провели продажу": 2700,
+                "__EMPTY": "отдал наличкой",
+                "__EMPTY_1": "37кв - 300₽ за 1 ключ\n51кв - 600₽ за 2 ключа\n58кв - 600₽ за 2 ключа\n77кв - 300₽ за 1 ключ\n81кв - 900₽ за 3 ключа\n\nИтого 2700₽ отдал наличкой ранее"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "88f7f42a-9f87-4762-9662-036211c92a64"
+            },
+            {
+              "rawData": {
+                "Провели продажу": 600,
+                "__EMPTY": "напрямую на карту"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "cfbdb8ac-c8e2-4e7e-a896-c6d5576a0c2f"
+            },
+            {
+              "rawData": {
+                "Провели продажу": 3000,
+                "__EMPTY": "перевёл я на карту"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "5a60afe4-9960-41c7-bf4b-58cdaed3c5df"
+            },
+            {
+              "rawData": {
+                "Провели продажу": 1800,
+                "__EMPTY": "перевёл я на карту"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "326e84a4-d000-43e8-a678-ac16035eafc4"
+            },
+            {
+              "rawData": {
+                "Провели продажу": 600,
+                "__EMPTY": "перевёл я на карту"
+              },
+              "name": "",
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false,
+              "id": "18c9a89e-500c-4bac-bbf0-c6547f3d1ff7"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

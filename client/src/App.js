@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
-import HouseSelector from './components/HouseSelector';
+import HouseList from './components/HouseList';
 import HouseInfo from './components/HouseInfo';
 import ApartmentTable from './components/ApartmentTable';
 import AddHouseModal from './components/AddHouseModal';
@@ -128,24 +128,26 @@ function App() {
       </div>
 
       <div className="controls-bar">
-        <HouseSelector
-          houses={houses}
-          selectedId={selectedHouseId}
-          onSelect={setSelectedHouseId}
-        />
-        <button className="btn btn-primary" onClick={() => setShowAddHouse(true)}>
-          + Добавить дом
-        </button>
-        <button className="btn btn-secondary" onClick={() => setShowImport(true)}>
-          Импорт из файла
-        </button>
-        {selectedHouse && (
+        {selectedHouse ? (
           <>
+            <button className="btn btn-secondary" onClick={() => { setSelectedHouseId(null); setSelectedHouse(null); }}>
+              ← Назад к списку
+            </button>
+            <span className="controls-address">{selectedHouse.address}</span>
             <button className="btn btn-success" onClick={() => setShowAddApartment(true)}>
               + Квартира
             </button>
             <button className="btn btn-danger btn-small" onClick={handleDeleteHouse}>
               Удалить дом
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="btn btn-primary" onClick={() => setShowAddHouse(true)}>
+              + Добавить дом
+            </button>
+            <button className="btn btn-secondary" onClick={() => setShowImport(true)}>
+              Импорт из файла
             </button>
           </>
         )}
@@ -164,12 +166,18 @@ function App() {
         </>
       )}
 
-      {!selectedHouse && houses.length === 0 && (
-        <div className="empty-state">
-          <div className="icon">🏢</div>
-          <h3>Нет добавленных домов</h3>
-          <p>Добавьте первый дом для начала работы</p>
-        </div>
+      {!selectedHouse && (
+        <>
+          {houses.length === 0 ? (
+            <div className="empty-state">
+              <div className="icon">🏢</div>
+              <h3>Нет добавленных домов</h3>
+              <p>Добавьте первый дом для начала работы</p>
+            </div>
+          ) : (
+            <HouseList houses={houses} onSelect={setSelectedHouseId} />
+          )}
+        </>
       )}
 
       {showAddHouse && (

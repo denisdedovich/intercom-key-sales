@@ -157,6 +157,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
             <th>ФИО</th>
             <th>Ключи</th>
             <th>Оплачен</th>
+            <th>Договор</th>
             <th>Способ оплаты</th>
             <th>Счет</th>
             <th>Статус трубки</th>
@@ -167,7 +168,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
         <tbody>
           {house.apartments.length === 0 && (
             <tr>
-              <td colSpan={rawColumns.length + 9} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
+              <td colSpan={rawColumns.length + 10} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
                 Нет добавленных квартир. Нажмите "+ Квартира" или импортируйте данные.
               </td>
             </tr>
@@ -177,7 +178,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {apt.residents.length === 0 && (
                 <tr>
                   <td style={{ fontWeight: 600 }}>{apt.number}</td>
-                  <td colSpan={rawColumns.length + 7} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
+                  <td colSpan={rawColumns.length + 8} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                     Нет жильцов
                   </td>
                   <td>
@@ -200,12 +201,21 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                   ))}
                   <td>{renderEditableText(apt.id, res.id, 'name', res.name)}</td>
                   <td style={{ textAlign: 'center' }}>{renderEditableNumber(apt.id, res.id, 'keysSold', res.keysSold)}</td>
-                  <td style={{ textAlign: 'center' }}>
+                   <td style={{ textAlign: 'center' }}>
                     <div className="checkbox-wrapper">
                       <input
                         type="checkbox"
                         checked={res.isPaid}
                         onChange={() => onUpdateResident(apt.id, res.id, { isPaid: !res.isPaid })}
+                      />
+                    </div>
+                  </td>
+                  <td style={{ textAlign: 'center' }}>
+                    <div className="checkbox-wrapper">
+                      <input
+                        type="checkbox"
+                        checked={res.hasContract || false}
+                        onChange={() => onUpdateResident(apt.id, res.id, { hasContract: !res.hasContract })}
                       />
                     </div>
                   </td>
@@ -244,7 +254,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {newResidentAptId === apt.id && (
                 <tr>
                   {apt.residents.length === 0 && <td style={{ fontWeight: 600 }}>{apt.number}</td>}
-                  <td colSpan={rawColumns.length + 8}>
+                  <td colSpan={rawColumns.length + 9}>
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                       <input
                         type="text"
@@ -256,6 +266,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                             onAddResident(apt.id, {
                               name: newResidentName.trim(),
                               rawData: {},
+                              hasContract: false,
                               keysSold: 0,
                               isPaid: false,
                               paymentMethod: '',
@@ -275,6 +286,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                           onAddResident(apt.id, {
                             name: newResidentName.trim(),
                             rawData: {},
+                            hasContract: false,
                             keysSold: 0,
                             isPaid: false,
                             paymentMethod: '',
