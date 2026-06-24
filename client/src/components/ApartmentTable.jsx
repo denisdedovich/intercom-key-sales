@@ -167,7 +167,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
         <tbody>
           {house.apartments.length === 0 && (
             <tr>
-              <td colSpan={4 + rawColumns.length + 6} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
+              <td colSpan={rawColumns.length + 9} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
                 Нет добавленных квартир. Нажмите "+ Квартира" или импортируйте данные.
               </td>
             </tr>
@@ -195,16 +195,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                       {apt.number}
                     </td>
                   )}
-                  {idx === 0 && rawColumns.length > 0 && (
-                    <td rowSpan={apt.residents.length + (newResidentAptId === apt.id ? 1 : 0)} style={{ fontSize: '12px', color: '#6b7280', verticalAlign: 'top' }}>
-                      {rawColumns.map(col => (
-                        <div key={col} style={{ marginBottom: '2px' }}>
-                          <span style={{ fontWeight: 600 }}>{col}:</span> {res.rawData?.[col] || '—'}
-                        </div>
-                      ))}
-                    </td>
-                  )}
-                  {rawColumns.length === 0 && rawColumns.map(col => (
+                  {rawColumns.map(col => (
                     <td key={col}>{renderRawCell(apt.id, res.id, col, res.rawData?.[col])}</td>
                   ))}
                   <td>{renderEditableText(apt.id, res.id, 'name', res.name)}</td>
