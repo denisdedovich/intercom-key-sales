@@ -159,7 +159,6 @@ function App() {
           <HouseInfo house={selectedHouse} onUpdate={handleUpdateHouse} />
           <ApartmentTable
             house={selectedHouse}
-            onUpdateApartment={handleUpdateApartment}
             onDeleteApartment={handleDeleteApartment}
             onAddResident={handleAddResident}
             onUpdateResident={handleUpdateResident}

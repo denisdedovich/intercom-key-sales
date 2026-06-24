@@ -22,7 +22,7 @@
             {
               "rawData": {
                 "№ подъезда": 1,
-                "№ квартиры": 1,
+                "№ квартиры": "1",
                 "наличие договора": "+",
                 "выданы базовые ключи": "+",
                 "сумма": "",
@@ -74,7 +74,8 @@
                 "№ квартиры": 3,
                 "выданы базовые ключи": "+",
                 "сумма": "",
-                "Провели продажу": false
+                "Провели продажу": false,
+                "наличие договора": ""
               },
               "name": "",
               "keysSold": 0,
@@ -5482,21 +5483,17 @@
           "residents": [
             {
               "id": "2a3b1599-0e91-4607-a40f-301c792cdfb1",
-              "name": "",
+              "name": "поао",
               "hasContract": false,
               "keysSold": 0,
               "isPaid": false,
               "paymentMethod": "",
               "invoiceIssued": false,
               "tubeStatus": "none",
-              "tubePayment": false
+              "tubePayment": false,
+              "contractStatus": "signed"
             }
           ]
-        },
-        {
-          "id": "c11427c3-73be-482b-acc7-d4bfba6158f6",
-          "number": "2",
-          "residents": []
         },
         {
           "id": "dceeccc1-ed1f-4014-a90d-0fee76a1fe48",
