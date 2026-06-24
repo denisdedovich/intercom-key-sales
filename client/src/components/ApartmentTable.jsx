@@ -155,6 +155,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               <th key={col}>{col}</th>
             ))}
             <th>ФИО</th>
+            <th>Договор</th>
             <th>Ключи</th>
             <th>Оплачен</th>
             <th>Способ оплаты</th>
@@ -167,7 +168,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
         <tbody>
           {house.apartments.length === 0 && (
             <tr>
-              <td colSpan={rawColumns.length + 9} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
+              <td colSpan={rawColumns.length + 10} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
                 Нет добавленных квартир. Нажмите "+ Квартира" или импортируйте данные.
               </td>
             </tr>
@@ -177,7 +178,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {apt.residents.length === 0 && (
                 <tr>
                   <td style={{ fontWeight: 600 }}>{apt.number}</td>
-                  <td colSpan={rawColumns.length + 7} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
+                  <td colSpan={rawColumns.length + 8} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                     Нет жильцов
                   </td>
                   <td>
@@ -199,6 +200,15 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                     <td key={col}>{renderRawCell(apt.id, res.id, col, res.rawData?.[col])}</td>
                   ))}
                   <td>{renderEditableText(apt.id, res.id, 'name', res.name)}</td>
+                  <td>
+                    <select
+                      value={res.contractStatus || 'unsigned'}
+                      onChange={(e) => onUpdateResident(apt.id, res.id, { contractStatus: e.target.value })}
+                    >
+                      <option value="unsigned">Не подписан</option>
+                      <option value="signed">Подписан</option>
+                    </select>
+                  </td>
                   <td style={{ textAlign: 'center' }}>{renderEditableNumber(apt.id, res.id, 'keysSold', res.keysSold)}</td>
                    <td style={{ textAlign: 'center' }}>
                     <div className="checkbox-wrapper">
@@ -244,7 +254,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {newResidentAptId === apt.id && (
                 <tr>
                   {apt.residents.length === 0 && <td style={{ fontWeight: 600 }}>{apt.number}</td>}
-                  <td colSpan={rawColumns.length + 8}>
+                  <td colSpan={rawColumns.length + 9}>
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                       <input
                         type="text"
@@ -257,6 +267,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                               name: newResidentName.trim(),
                               rawData: {},
                               hasContract: false,
+                              contractStatus: 'unsigned',
                               keysSold: 0,
                               isPaid: false,
                               paymentMethod: '',
@@ -277,6 +288,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                             name: newResidentName.trim(),
                             rawData: {},
                             hasContract: false,
+                            contractStatus: 'unsigned',
                             keysSold: 0,
                             isPaid: false,
                             paymentMethod: '',

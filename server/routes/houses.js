@@ -124,6 +124,7 @@ router.post('/:houseId/apartments/:aptId/residents', (req, res) => {
     id: uuidv4(),
     name: req.body.name || '',
     hasContract: req.body.hasContract || false,
+    contractStatus: req.body.contractStatus || 'unsigned',
     keysSold: req.body.keysSold || 0,
     isPaid: req.body.isPaid || false,
     paymentMethod: req.body.paymentMethod || '',

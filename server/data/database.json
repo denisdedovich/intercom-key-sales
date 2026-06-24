@@ -26,7 +26,7 @@
                 "наличие договора": "+",
                 "выданы базовые ключи": "+",
                 "сумма": "",
-                "Провели продажу": false
+                "Провели продажу": ""
               },
               "name": "",
               "keysSold": 0,
@@ -50,7 +50,8 @@
                 "наличие договора": "+",
                 "выданы базовые ключи": "+",
                 "сумма": "",
-                "Провели продажу": false
+                "Провели продажу": false,
+                "№ подъезда": ""
               },
               "name": "",
               "keysSold": 0,
@@ -5465,6 +5466,277 @@
               "id": "18c9a89e-500c-4bac-bbf0-c6547f3d1ff7"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "5cab2713-070a-4d91-88c3-b5d4e81314f3",
+      "address": "пример 10",
+      "totalApartments": 50,
+      "connectedApartments": 0,
+      "monthlyFee": 100,
+      "apartments": [
+        {
+          "id": "f68383b6-f13a-4cc6-920c-1d1fe1b89362",
+          "number": "1",
+          "residents": [
+            {
+              "id": "2a3b1599-0e91-4607-a40f-301c792cdfb1",
+              "name": "",
+              "hasContract": false,
+              "keysSold": 0,
+              "isPaid": false,
+              "paymentMethod": "",
+              "invoiceIssued": false,
+              "tubeStatus": "none",
+              "tubePayment": false
+            }
+          ]
+        },
+        {
+          "id": "c11427c3-73be-482b-acc7-d4bfba6158f6",
+          "number": "2",
+          "residents": []
+        },
+        {
+          "id": "dceeccc1-ed1f-4014-a90d-0fee76a1fe48",
+          "number": "3",
+          "residents": []
+        },
+        {
+          "id": "4506e5d9-f684-46f0-ac66-3bd21441458b",
+          "number": "4",
+          "residents": []
+        },
+        {
+          "id": "f7e75d5a-5c57-410e-b4f7-9f7e7f18640e",
+          "number": "5",
+          "residents": []
+        },
+        {
+          "id": "961bd2e0-b6fc-4392-acb2-17956e7de483",
+          "number": "6",
+          "residents": []
+        },
+        {
+          "id": "97413897-b47a-412e-8e7c-cdeafb693aeb",
+          "number": "7",
+          "residents": []
+        },
+        {
+          "id": "d95d66c9-3a16-4ed1-bb35-0e0cf3dac35d",
+          "number": "8",
+          "residents": []
+        },
+        {
+          "id": "f2a97f81-faf6-48ac-9717-6463a1271776",
+          "number": "9",
+          "residents": []
+        },
+        {
+          "id": "858e434e-feef-42a9-a395-f22cec347c78",
+          "number": "10",
+          "residents": []
+        },
+        {
+          "id": "0fe9029f-b0f0-4afd-a479-5aa4fd175f7a",
+          "number": "11",
+          "residents": []
+        },
+        {
+          "id": "7c001398-a7db-4125-abd2-30aa17f06124",
+          "number": "12",
+          "residents": []
+        },
+        {
+          "id": "9c7f29cd-7de0-4ea8-8b59-010255daaaa6",
+          "number": "13",
+          "residents": []
+        },
+        {
+          "id": "a39970bb-94ef-44b7-92af-ed933611ba48",
+          "number": "14",
+          "residents": []
+        },
+        {
+          "id": "de36e71d-d68a-4f4d-9645-ed1190fbc4b7",
+          "number": "15",
+          "residents": []
+        },
+        {
+          "id": "4c1b08ce-bf00-472d-99d2-7c06fc68a446",
+          "number": "16",
+          "residents": []
+        },
+        {
+          "id": "434e00cf-9a68-44a9-a5ba-233847bcff94",
+          "number": "17",
+          "residents": []
+        },
+        {
+          "id": "88e377ff-ad6e-4998-b5c6-7a707bd34d3f",
+          "number": "18",
+          "residents": []
+        },
+        {
+          "id": "2b22858d-cfec-4c16-ad1b-221ebc863cf8",
+          "number": "19",
+          "residents": []
+        },
+        {
+          "id": "2b6e4901-ef3b-4583-a55d-aa1d3f4e02e4",
+          "number": "20",
+          "residents": []
+        },
+        {
+          "id": "48be0792-d5c0-4c81-a811-12128f95d4cb",
+          "number": "21",
+          "residents": []
+        },
+        {
+          "id": "8914493e-df17-4690-a61d-971b6bd60820",
+          "number": "22",
+          "residents": []
+        },
+        {
+          "id": "c744fc49-4dde-4b0e-a139-64e6a808d0de",
+          "number": "23",
+          "residents": []
+        },
+        {
+          "id": "e24fd003-c710-4f85-8780-99a93b2fe9fa",
+          "number": "24",
+          "residents": []
+        },
+        {
+          "id": "c90c3fc0-efd1-492e-8c45-054797afe605",
+          "number": "25",
+          "residents": []
+        },
+        {
+          "id": "64a33909-6165-442a-acda-6b70c0446688",
+          "number": "26",
+          "residents": []
+        },
+        {
+          "id": "1bb14d87-6cfb-4614-b586-b206113f421f",
+          "number": "27",
+          "residents": []
+        },
+        {
+          "id": "50698f54-7737-4f52-bca4-aad847d2314e",
+          "number": "28",
+          "residents": []
+        },
+        {
+          "id": "9992dd5e-2b14-400b-b277-f09a4de9e5af",
+          "number": "29",
+          "residents": []
+        },
+        {
+          "id": "2ad87312-fcae-4680-bf95-7f745e319a28",
+          "number": "30",
+          "residents": []
+        },
+        {
+          "id": "2ac7e089-ab60-42f8-84d0-0034591aea23",
+          "number": "31",
+          "residents": []
+        },
+        {
+          "id": "281c33ba-1d2b-4cca-9d95-8a9caa015a26",
+          "number": "32",
+          "residents": []
+        },
+        {
+          "id": "065f864d-1041-4560-aa4e-b2405ab5095b",
+          "number": "33",
+          "residents": []
+        },
+        {
+          "id": "a256b52d-bc55-4be5-b75c-e8f54833e0e1",
+          "number": "34",
+          "residents": []
+        },
+        {
+          "id": "54d4d7a7-4b04-4e6f-ae33-ed6ef7e08e2b",
+          "number": "35",
+          "residents": []
+        },
+        {
+          "id": "b2ee64f7-c422-4686-bbf8-6f2d814a1e94",
+          "number": "36",
+          "residents": []
+        },
+        {
+          "id": "2c07b7bc-b951-4fb0-a092-3744386ee3d9",
+          "number": "37",
+          "residents": []
+        },
+        {
+          "id": "3fa43418-b34b-4377-8fcb-d4d1eee8d1bb",
+          "number": "38",
+          "residents": []
+        },
+        {
+          "id": "19daa803-dceb-4728-b446-2866f4402926",
+          "number": "39",
+          "residents": []
+        },
+        {
+          "id": "c5358ecf-e3a1-4c61-8a06-6596b852b24d",
+          "number": "40",
+          "residents": []
+        },
+        {
+          "id": "4858d322-0e32-4575-b6e1-2ca538102640",
+          "number": "41",
+          "residents": []
+        },
+        {
+          "id": "86629a51-b3f4-46c8-9a47-769c8a62df4d",
+          "number": "42",
+          "residents": []
+        },
+        {
+          "id": "6f212d32-813f-4622-a494-ead3806d023c",
+          "number": "43",
+          "residents": []
+        },
+        {
+          "id": "de713832-2b77-45ce-984b-86372f870d28",
+          "number": "44",
+          "residents": []
+        },
+        {
+          "id": "d4cb347b-cc04-4c60-89da-f15da14d4261",
+          "number": "45",
+          "residents": []
+        },
+        {
+          "id": "638e7a12-de8a-4b10-ab00-c73e6878160c",
+          "number": "46",
+          "residents": []
+        },
+        {
+          "id": "14f5c4c5-d295-4c3e-881f-188f8999907d",
+          "number": "47",
+          "residents": []
+        },
+        {
+          "id": "2588087f-fdcf-4562-a1ba-eaabf74cdb06",
+          "number": "48",
+          "residents": []
+        },
+        {
+          "id": "3f4501cc-cf1d-4c43-97c5-9e6737aa7cf3",
+          "number": "49",
+          "residents": []
+        },
+        {
+          "id": "52b41e0b-3d90-4067-834d-507e7bbe1e4a",
+          "number": "50",
+          "residents": []
         }
       ]
     }
