@@ -6,6 +6,7 @@ import HouseInfo from './components/HouseInfo';
 import ApartmentTable from './components/ApartmentTable';
 import AddHouseModal from './components/AddHouseModal';
 import AddApartmentModal from './components/AddApartmentModal';
+import ImportModal from './components/ImportModal';
 
 const API_URL = 'http://localhost:3001/api';
 
@@ -15,6 +16,7 @@ function App() {
   const [selectedHouse, setSelectedHouse] = useState(null);
   const [showAddHouse, setShowAddHouse] = useState(false);
   const [showAddApartment, setShowAddApartment] = useState(false);
+  const [showImport, setShowImport] = useState(false);
 
   const fetchHouses = useCallback(async () => {
     try {
@@ -134,6 +136,9 @@ function App() {
         <button className="btn btn-primary" onClick={() => setShowAddHouse(true)}>
           + Добавить дом
         </button>
+        <button className="btn btn-secondary" onClick={() => setShowImport(true)}>
+          Импорт из файла
+        </button>
         {selectedHouse && (
           <>
             <button className="btn btn-success" onClick={() => setShowAddApartment(true)}>
@@ -173,6 +178,10 @@ function App() {
 
       {showAddApartment && (
         <AddApartmentModal onClose={() => setShowAddApartment(false)} onAdd={handleAddApartment} />
+      )}
+
+      {showImport && (
+        <ImportModal onClose={() => setShowImport(false)} onImport={() => { fetchHouses(); setShowImport(false); }} />
       )}
     </div>
   );

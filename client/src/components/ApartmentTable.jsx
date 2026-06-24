@@ -5,6 +5,9 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
   const [newResidentAptId, setNewResidentAptId] = useState(null);
   const [newResidentName, setNewResidentName] = useState('');
 
+  const rawColumns = house.columns || [];
+  const hasRawData = rawColumns.length > 0;
+
   const handleCellClick = (aptId, resId, field) => {
     setEditingCell({ aptId, resId, field });
   };
@@ -18,31 +21,12 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
     handleCellBlur();
   };
 
-  const handleTogglePaid = (aptId, resId, currentValue) => {
-    onUpdateResident(aptId, resId, { isPaid: !currentValue });
-  };
-
-  const handleToggleInvoice = (aptId, resId, currentValue) => {
-    onUpdateResident(aptId, resId, { invoiceIssued: !currentValue });
-  };
-
-  const handleToggleTubePayment = (aptId, resId, currentValue) => {
-    onUpdateResident(aptId, resId, { tubePayment: !currentValue });
-  };
-
-  const handleAddResident = (aptId) => {
-    if (!newResidentName.trim()) return;
-    onAddResident(aptId, {
-      name: newResidentName.trim(),
-      keysSold: 0,
-      isPaid: false,
-      paymentMethod: '',
-      invoiceIssued: false,
-      tubeStatus: 'none',
-      tubePayment: false
-    });
-    setNewResidentName('');
-    setNewResidentAptId(null);
+  const handleUpdateRawData = (aptId, resId, colName, value) => {
+    const resident = house.apartments.find(a => a.id === aptId)?.residents.find(r => r.id === resId);
+    if (!resident) return;
+    const newRawData = { ...resident.rawData, [colName]: value };
+    onUpdateResident(aptId, resId, { rawData: newRawData });
+    handleCellBlur();
   };
 
   const renderEditableText = (aptId, resId, field, value) => {
@@ -50,7 +34,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
       return (
         <input
           type="text"
-          defaultValue={value}
+          defaultValue={value || ''}
           autoFocus
           onBlur={(e) => handleUpdateField(aptId, resId, field, e.target.value)}
           onKeyDown={(e) => {
@@ -72,7 +56,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
       return (
         <input
           type="number"
-          defaultValue={value}
+          defaultValue={value || 0}
           autoFocus
           min="0"
           onBlur={(e) => handleUpdateField(aptId, resId, field, parseInt(e.target.value) || 0)}
@@ -94,7 +78,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
     if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === 'paymentMethod') {
       return (
         <select
-          defaultValue={value}
+          defaultValue={value || ''}
           autoFocus
           onBlur={(e) => handleUpdateField(aptId, resId, 'paymentMethod', e.target.value)}
           onChange={(e) => handleUpdateField(aptId, resId, 'paymentMethod', e.target.value)}
@@ -118,7 +102,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
     if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === 'tubeStatus') {
       return (
         <select
-          defaultValue={value}
+          defaultValue={value || 'none'}
           autoFocus
           onBlur={(e) => handleUpdateField(aptId, resId, 'tubeStatus', e.target.value)}
           onChange={(e) => handleUpdateField(aptId, resId, 'tubeStatus', e.target.value)}
@@ -138,17 +122,43 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
     );
   };
 
+  const renderRawCell = (aptId, resId, colName, value) => {
+    const cellKey = `raw_${colName}`;
+    if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === cellKey) {
+      return (
+        <input
+          type="text"
+          defaultValue={value || ''}
+          autoFocus
+          onBlur={(e) => handleUpdateRawData(aptId, resId, colName, e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') handleUpdateRawData(aptId, resId, colName, e.target.value);
+            if (e.key === 'Escape') handleCellBlur();
+          }}
+        />
+      );
+    }
+    return (
+      <span className="editable" onClick={() => handleCellClick(aptId, resId, cellKey)}>
+        {value || '—'}
+      </span>
+    );
+  };
+
   return (
     <div className="table-wrapper">
       <table className="apartment-table">
         <thead>
           <tr>
             <th>Кв.</th>
+            {rawColumns.map(col => (
+              <th key={col}>{col}</th>
+            ))}
             <th>ФИО</th>
-            <th>Кол-во ключей</th>
+            <th>Ключи</th>
             <th>Оплачен</th>
             <th>Способ оплаты</th>
-            <th>Счет выставлен</th>
+            <th>Счет</th>
             <th>Статус трубки</th>
             <th>Оплата трубки</th>
             <th>Действия</th>
@@ -157,8 +167,8 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
         <tbody>
           {house.apartments.length === 0 && (
             <tr>
-              <td colSpan="9" style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
-                Нет добавленных квартир. Нажмите "+ Квартира" чтобы добавить.
+              <td colSpan={4 + rawColumns.length + 6} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
+                Нет добавленных квартир. Нажмите "+ Квартира" или импортируйте данные.
               </td>
             </tr>
           )}
@@ -167,23 +177,13 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {apt.residents.length === 0 && (
                 <tr>
                   <td style={{ fontWeight: 600 }}>{apt.number}</td>
-                  <td colSpan="7" style={{ color: '#9ca3af', fontStyle: 'italic' }}>
+                  <td colSpan={rawColumns.length + 7} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                     Нет жильцов
                   </td>
                   <td>
                     <div className="actions-cell">
-                      <button
-                        className="btn btn-secondary btn-small"
-                        onClick={() => setNewResidentAptId(apt.id)}
-                      >
-                        + Жилец
-                      </button>
-                      <button
-                        className="btn btn-danger btn-small"
-                        onClick={() => onDeleteApartment(apt.id)}
-                      >
-                        Удалить
-                      </button>
+                      <button className="btn btn-secondary btn-small" onClick={() => setNewResidentAptId(apt.id)}>+ Жилец</button>
+                      <button className="btn btn-danger btn-small" onClick={() => onDeleteApartment(apt.id)}>Удалить</button>
                     </div>
                   </td>
                 </tr>
@@ -195,6 +195,18 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                       {apt.number}
                     </td>
                   )}
+                  {idx === 0 && rawColumns.length > 0 && (
+                    <td rowSpan={apt.residents.length + (newResidentAptId === apt.id ? 1 : 0)} style={{ fontSize: '12px', color: '#6b7280', verticalAlign: 'top' }}>
+                      {rawColumns.map(col => (
+                        <div key={col} style={{ marginBottom: '2px' }}>
+                          <span style={{ fontWeight: 600 }}>{col}:</span> {res.rawData?.[col] || '—'}
+                        </div>
+                      ))}
+                    </td>
+                  )}
+                  {rawColumns.length === 0 && rawColumns.map(col => (
+                    <td key={col}>{renderRawCell(apt.id, res.id, col, res.rawData?.[col])}</td>
+                  ))}
                   <td>{renderEditableText(apt.id, res.id, 'name', res.name)}</td>
                   <td style={{ textAlign: 'center' }}>{renderEditableNumber(apt.id, res.id, 'keysSold', res.keysSold)}</td>
                   <td style={{ textAlign: 'center' }}>
@@ -202,7 +214,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                       <input
                         type="checkbox"
                         checked={res.isPaid}
-                        onChange={() => handleTogglePaid(apt.id, res.id, res.isPaid)}
+                        onChange={() => onUpdateResident(apt.id, res.id, { isPaid: !res.isPaid })}
                       />
                     </div>
                   </td>
@@ -212,7 +224,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                       <input
                         type="checkbox"
                         checked={res.invoiceIssued}
-                        onChange={() => handleToggleInvoice(apt.id, res.id, res.invoiceIssued)}
+                        onChange={() => onUpdateResident(apt.id, res.id, { invoiceIssued: !res.invoiceIssued })}
                       />
                     </div>
                   </td>
@@ -222,27 +234,17 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                       <input
                         type="checkbox"
                         checked={res.tubePayment}
-                        onChange={() => handleToggleTubePayment(apt.id, res.id, res.tubePayment)}
+                        onChange={() => onUpdateResident(apt.id, res.id, { tubePayment: !res.tubePayment })}
                       />
                     </div>
                   </td>
                   <td>
                     <div className="actions-cell">
                       {idx === 0 && (
-                        <button
-                          className="btn btn-secondary btn-small"
-                          onClick={() => setNewResidentAptId(apt.id)}
-                        >
-                          + Жилец
-                        </button>
+                        <button className="btn btn-secondary btn-small" onClick={() => setNewResidentAptId(apt.id)}>+ Жилец</button>
                       )}
                       {apt.residents.length === 1 && idx === 0 && (
-                        <button
-                          className="btn btn-danger btn-small"
-                          onClick={() => onDeleteApartment(apt.id)}
-                        >
-                          Удалить
-                        </button>
+                        <button className="btn btn-danger btn-small" onClick={() => onDeleteApartment(apt.id)}>Удалить</button>
                       )}
                     </div>
                   </td>
@@ -251,18 +253,48 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {newResidentAptId === apt.id && (
                 <tr>
                   {apt.residents.length === 0 && <td style={{ fontWeight: 600 }}>{apt.number}</td>}
-                  <td colSpan={apt.residents.length === 0 ? 7 : 8}>
+                  <td colSpan={rawColumns.length + 8}>
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                       <input
                         type="text"
                         placeholder="ФИО жильца"
                         value={newResidentName}
                         onChange={(e) => setNewResidentName(e.target.value)}
-                        onKeyDown={(e) => e.key === 'Enter' && handleAddResident(apt.id)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' && newResidentName.trim()) {
+                            onAddResident(apt.id, {
+                              name: newResidentName.trim(),
+                              rawData: {},
+                              keysSold: 0,
+                              isPaid: false,
+                              paymentMethod: '',
+                              invoiceIssued: false,
+                              tubeStatus: 'none',
+                              tubePayment: false
+                            });
+                            setNewResidentName('');
+                            setNewResidentAptId(null);
+                          }
+                        }}
                         autoFocus
                         style={{ flex: 1, padding: '6px 10px', border: '2px solid #e0e0e0', borderRadius: '8px' }}
                       />
-                      <button className="btn btn-success btn-small" onClick={() => handleAddResident(apt.id)}>Добавить</button>
+                      <button className="btn btn-success btn-small" onClick={() => {
+                        if (newResidentName.trim()) {
+                          onAddResident(apt.id, {
+                            name: newResidentName.trim(),
+                            rawData: {},
+                            keysSold: 0,
+                            isPaid: false,
+                            paymentMethod: '',
+                            invoiceIssued: false,
+                            tubeStatus: 'none',
+                            tubePayment: false
+                          });
+                          setNewResidentName('');
+                          setNewResidentAptId(null);
+                        }
+                      }}>Добавить</button>
                       <button className="btn btn-secondary btn-small" onClick={() => { setNewResidentAptId(null); setNewResidentName(''); }}>Отмена</button>
                     </div>
                   </td>

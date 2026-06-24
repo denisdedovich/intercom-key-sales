@@ -126,4 +126,95 @@ router.post('/:houseId/apartments/:aptId/residents', (req, res) => {
   res.status(201).json(resident);
 });
 
+router.post('/import-raw', (req, res) => {
+  const { columns, rows, mapping, houseSettings } = req.body;
+  if (!rows || !Array.isArray(rows) || !mapping) {
+    return res.status(400).json({ error: 'Invalid import data' });
+  }
+  const db = readDB();
+  const houseAddressCol = mapping.address;
+  const apartmentCol = mapping.apartment;
+  const nameCol = mapping.name;
+  const housesMap = {};
+
+  for (const row of rows) {
+    const address = houseAddressCol ? (row[houseAddressCol] || '').trim() : (houseSettings?.address || 'Импорт');
+    const aptNum = apartmentCol ? (row[apartmentCol] || '').toString().trim() : '';
+    const personName = nameCol ? (row[nameCol] || '').toString().trim() : '';
+
+    if (!housesMap[address]) {
+      housesMap[address] = {
+        address,
+        columns: columns || [],
+        totalApartments: houseSettings?.totalApartments || 0,
+        connectedApartments: houseSettings?.connectedApartments || 0,
+        monthlyFee: houseSettings?.monthlyFee || 0,
+        apartments: {}
+      };
+    }
+
+    const house = housesMap[address];
+    const aptKey = aptNum || '_no_apt';
+
+    if (!house.apartments[aptKey]) {
+      house.apartments[aptKey] = { number: aptNum, residents: [] };
+    }
+
+    const resident = {
+      rawData: { ...row },
+      name: personName,
+      keysSold: 0,
+      isPaid: false,
+      paymentMethod: '',
+      invoiceIssued: false,
+      tubeStatus: 'none',
+      tubePayment: false
+    };
+
+    house.apartments[aptKey].residents.push(resident);
+  }
+
+  for (const address of Object.keys(housesMap)) {
+    const importHouse = housesMap[address];
+    const existing = db.houses.find(h => h.address.toLowerCase() === address.toLowerCase());
+
+    if (existing) {
+      existing.columns = importHouse.columns;
+      existing.totalApartments = importHouse.totalApartments || existing.totalApartments;
+      existing.connectedApartments = importHouse.connectedApartments || existing.connectedApartments;
+      existing.monthlyFee = importHouse.monthlyFee || existing.monthlyFee;
+      for (const apt of Object.values(importHouse.apartments)) {
+        const existingApt = existing.apartments.find(a => a.number === apt.number);
+        if (existingApt) {
+          existingApt.residents.push(...apt.residents.map(r => ({ ...r, id: uuidv4() })));
+        } else {
+          existing.apartments.push({
+            id: uuidv4(),
+            number: apt.number,
+            residents: apt.residents.map(r => ({ ...r, id: uuidv4() }))
+          });
+        }
+      }
+    } else {
+      const newHouse = {
+        id: uuidv4(),
+        address: importHouse.address,
+        columns: importHouse.columns,
+        totalApartments: importHouse.totalApartments,
+        connectedApartments: importHouse.connectedApartments,
+        monthlyFee: importHouse.monthlyFee,
+        apartments: Object.values(importHouse.apartments).map(apt => ({
+          id: uuidv4(),
+          number: apt.number,
+          residents: apt.residents.map(r => ({ ...r, id: uuidv4() }))
+        }))
+      };
+      db.houses.push(newHouse);
+    }
+  }
+
+  writeDB(db);
+  res.json({ success: true, housesCount: db.houses.length });
+});
+
 module.exports = router;
