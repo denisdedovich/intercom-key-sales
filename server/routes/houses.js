@@ -154,9 +154,10 @@ router.post('/import-raw', (req, res) => {
     const personName = nameCol ? (row[nameCol] || '').toString().trim() : '';
 
     if (!housesMap[address]) {
+      const allColumns = [...new Set(rows.flatMap(r => Object.keys(r)))];
       housesMap[address] = {
         address,
-        columns: columns || [],
+        columns: allColumns,
         totalApartments: houseSettings?.totalApartments || 0,
         connectedApartments: houseSettings?.connectedApartments || 0,
         monthlyFee: houseSettings?.monthlyFee || 0,

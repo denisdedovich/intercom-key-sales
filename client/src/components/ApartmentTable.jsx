@@ -4,7 +4,11 @@ function ApartmentTable({ house, onDeleteApartment, onAddResident, onUpdateResid
   const [editingCell, setEditingCell] = useState(null);
   const [newResidentAptId, setNewResidentAptId] = useState(null);
 
-  const rawColumns = house.columns || [];
+  const rawColumns = house.columns?.length > 0
+    ? house.columns
+    : [...new Set(house.apartments.flatMap(apt =>
+        apt.residents.flatMap(r => Object.keys(r.rawData || {}))
+      ))];
 
   const handleCellClick = (aptId, resId, field) => {
     setEditingCell({ aptId, resId, field });

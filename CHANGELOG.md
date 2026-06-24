@@ -19,69 +19,6 @@
 - **Подключено** считается автоматически: количество квартир, где хотя бы один жилец имеет `hasContract: true`
 - Поле `connectedApartments` больше не ручное — вычисляется на фронте
 
-## Структура проекта (текущая)
-
-```
-├── client/src/
-│   ├── components/
-│   │   ├── HouseList.jsx         ← карточки домов (новый)
-│   │   ├── HouseSelector.jsx     ← старый select (не используется)
-│   │   ├── HouseInfo.jsx         ← инфо о доме (автоподсчёт connected)
-│   │   ├── ApartmentTable.jsx    ← таблица квартир (hasContract колонка)
-│   │   ├── AddHouseModal.jsx     ← модалка добавления дома
-│   │   ├── AddApartmentModal.jsx ← модалка добавления квартиры
-│   │   └── ImportModal.jsx       ← импорт CSV/Excel
-│   ├── App.js
-│   └── App.css
-├── server/
-│   ├── routes/houses.js          ← REST API (hasContract в resident)
-│   ├── data/database.json
-│   └── server.js
-├── CHANGELOG.md                  ← этот файл
-└── README.md
-```
-
-## Текущая модель данных
-
-### House
-```json
-{
-  "id": "uuid",
-  "address": "ул. Ленина, д. 10",
-  "totalApartments": 50,
-  "connectedApartments": 0,
-  "monthlyFee": 150,
-  "columns": [],
-  "apartments": [
-    {
-      "id": "uuid",
-      "number": "1",
-      "residents": [
-        {
-          "id": "uuid",
-          "name": "Иванов И.И.",
-          "hasContract": true,
-          "contractStatus": "signed",
-          "rawData": {},
-          "keysSold": 1,
-          "isPaid": true,
-          "paymentMethod": "cash",
-          "invoiceIssued": false,
-          "tubeStatus": "installed",
-          "tubePayment": false
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Что планируется (следующие шаги)
-- Функционал учета (продажи ключей, оплата, счета)
-- Экспорт данных
-- Статистика / аналитика
-- Пагинация для больших таблиц
-
 ---
 
 ## Доп. фиксы (коммит 18fedff)
@@ -103,3 +40,89 @@
   - rawData «наличие договора» === '+' (импорт)
   - contractStatus === 'signed' (базовая таблица)
 - Сервер: `POST /residents` принимает `contractStatus`
+
+---
+
+## Переработка таблицы под Excel-формат (коммит f5a7e49)
+- Таблица теперь показывает **только столбцы из импортированного файла** + «Действия»
+- **Убраны**: Кв., ФИО, Ключи, Оплачен, Договор, Способ оплаты, Счет, Статус трубки, Оплата трубки
+- Каждая строка = одна квартира с raw-данными из файла
+- Упрощённый компонент: только `renderRawCell` + кнопки
+
+---
+
+## Исправление столбцов таблицы (коммит — текущий)
+- **Сервер**: при импорте собираются **все уникальные ключи** из всех строк (а не только из первой)
+- **database.json**: обновлены `columns` для дома «МЖ1Д» — теперь все 12 столбцов из Excel
+- **Клиент**: фоллбэк — если `house.columns` пустой, колонки определяются из `rawData` квартир
+
+### Столбцы таблицы (из Excel-файла «Маршала Жукова 1Д КЛЮЧИ от ДОМОФОНА»)
+```
+№ подъезда | № квартиры | наличие договора | выданы базовые ключи |
+заказано доп. ключей | выпущено ключей | выдано ключей | сумма |
+оплата | комментарии | деньги | Провели продажу | Действия
+```
+
+---
+
+## Текущая модель данных
+
+### House
+```json
+{
+  "id": "uuid",
+  "address": "ул. Ленина, д. 10",
+  "totalApartments": 50,
+  "connectedApartments": 0,
+  "monthlyFee": 150,
+  "columns": ["№ подъезда", "№ квартиры", "наличие договора", "..."],
+  "apartments": [
+    {
+      "id": "uuid",
+      "number": "1",
+      "residents": [
+        {
+          "id": "uuid",
+          "name": "",
+          "hasContract": true,
+          "contractStatus": "signed",
+          "rawData": { "наличие договора": "+", "сумма": 600 },
+          "keysSold": 0,
+          "isPaid": false,
+          "paymentMethod": "",
+          "invoiceIssued": false,
+          "tubeStatus": "none",
+          "tubePayment": false
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Структура проекта (текущая)
+```
+├── client/src/
+│   ├── components/
+│   │   ├── HouseList.jsx         ← карточки домов
+│   │   ├── HouseSelector.jsx     ← старый select (не используется)
+│   │   ├── HouseInfo.jsx         ← инфо о доме (автоподсчёт connected)
+│   │   ├── ApartmentTable.jsx    ← таблица (только raw-столбцы + Действия)
+│   │   ├── AddHouseModal.jsx     ← модалка добавления дома
+│   │   ├── AddApartmentModal.jsx ← модалка добавления квартиры
+│   │   └── ImportModal.jsx       ← импорт CSV/Excel
+│   ├── App.js
+│   └── App.css
+├── server/
+│   ├── routes/houses.js          ← REST API
+│   ├── data/database.json
+│   └── server.js
+├── CHANGELOG.md
+└── README.md
+```
+
+## Что планируется (следующие шаги)
+- Функционал учета (продажи ключей, оплата, счета)
+- Экспорт данных
+- Статистика / аналитика
+- Пагинация для больших таблиц
