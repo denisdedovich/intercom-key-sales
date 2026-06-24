@@ -115,6 +115,7 @@ function App() {
     try {
       await axios.put(`${API_URL}/houses/${selectedHouseId}/apartments/${aptId}/residents/${resId}`, data);
       fetchHouse(selectedHouseId);
+      fetchHouses();
     } catch (err) {
       console.error('Error updating resident:', err);
     }

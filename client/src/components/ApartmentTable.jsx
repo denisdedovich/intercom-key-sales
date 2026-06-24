@@ -122,6 +122,31 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
     );
   };
 
+  const renderContractStatus = (aptId, resId, value) => {
+    if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === 'hasContract') {
+      return (
+        <select
+          defaultValue={value ? 'yes' : 'no'}
+          autoFocus
+          onBlur={(e) => handleUpdateField(aptId, resId, 'hasContract', e.target.value === 'yes')}
+          onChange={(e) => handleUpdateField(aptId, resId, 'hasContract', e.target.value === 'yes')}
+        >
+          <option value="no">Нет</option>
+          <option value="yes">Да</option>
+        </select>
+      );
+    }
+    return (
+      <span
+        className={`badge ${value ? 'badge-installed' : 'badge-not-installed'}`}
+        onClick={() => handleCellClick(aptId, resId, 'hasContract')}
+        style={{ cursor: 'pointer' }}
+      >
+        {value ? 'Да' : 'Нет'}
+      </span>
+    );
+  };
+
   const renderRawCell = (aptId, resId, colName, value) => {
     const cellKey = `raw_${colName}`;
     if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === cellKey) {
@@ -210,15 +235,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                       />
                     </div>
                   </td>
-                  <td style={{ textAlign: 'center' }}>
-                    <div className="checkbox-wrapper">
-                      <input
-                        type="checkbox"
-                        checked={res.hasContract || false}
-                        onChange={() => onUpdateResident(apt.id, res.id, { hasContract: !res.hasContract })}
-                      />
-                    </div>
-                  </td>
+                  <td>{renderContractStatus(apt.id, res.id, res.hasContract || false)}</td>
                   <td>{renderPaymentMethod(apt.id, res.id, res.paymentMethod)}</td>
                   <td style={{ textAlign: 'center' }}>
                     <div className="checkbox-wrapper">
