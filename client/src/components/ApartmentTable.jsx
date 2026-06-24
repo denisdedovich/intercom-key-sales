@@ -122,31 +122,6 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
     );
   };
 
-  const renderContractStatus = (aptId, resId, value) => {
-    if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === 'hasContract') {
-      return (
-        <select
-          defaultValue={value ? 'yes' : 'no'}
-          autoFocus
-          onBlur={(e) => handleUpdateField(aptId, resId, 'hasContract', e.target.value === 'yes')}
-          onChange={(e) => handleUpdateField(aptId, resId, 'hasContract', e.target.value === 'yes')}
-        >
-          <option value="no">Нет</option>
-          <option value="yes">Да</option>
-        </select>
-      );
-    }
-    return (
-      <span
-        className={`badge ${value ? 'badge-installed' : 'badge-not-installed'}`}
-        onClick={() => handleCellClick(aptId, resId, 'hasContract')}
-        style={{ cursor: 'pointer' }}
-      >
-        {value ? 'Да' : 'Нет'}
-      </span>
-    );
-  };
-
   const renderRawCell = (aptId, resId, colName, value) => {
     const cellKey = `raw_${colName}`;
     if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === cellKey) {
@@ -182,7 +157,6 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
             <th>ФИО</th>
             <th>Ключи</th>
             <th>Оплачен</th>
-            <th>Договор</th>
             <th>Способ оплаты</th>
             <th>Счет</th>
             <th>Статус трубки</th>
@@ -193,7 +167,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
         <tbody>
           {house.apartments.length === 0 && (
             <tr>
-              <td colSpan={rawColumns.length + 10} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
+              <td colSpan={rawColumns.length + 9} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
                 Нет добавленных квартир. Нажмите "+ Квартира" или импортируйте данные.
               </td>
             </tr>
@@ -203,7 +177,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {apt.residents.length === 0 && (
                 <tr>
                   <td style={{ fontWeight: 600 }}>{apt.number}</td>
-                  <td colSpan={rawColumns.length + 8} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
+                  <td colSpan={rawColumns.length + 7} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                     Нет жильцов
                   </td>
                   <td>
@@ -235,7 +209,6 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
                       />
                     </div>
                   </td>
-                  <td>{renderContractStatus(apt.id, res.id, res.hasContract || false)}</td>
                   <td>{renderPaymentMethod(apt.id, res.id, res.paymentMethod)}</td>
                   <td style={{ textAlign: 'center' }}>
                     <div className="checkbox-wrapper">
@@ -271,7 +244,7 @@ function ApartmentTable({ house, onUpdateApartment, onDeleteApartment, onAddResi
               {newResidentAptId === apt.id && (
                 <tr>
                   {apt.residents.length === 0 && <td style={{ fontWeight: 600 }}>{apt.number}</td>}
-                  <td colSpan={rawColumns.length + 9}>
+                  <td colSpan={rawColumns.length + 8}>
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                       <input
                         type="text"

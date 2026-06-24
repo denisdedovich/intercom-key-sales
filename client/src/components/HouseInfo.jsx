@@ -81,7 +81,7 @@ function HouseInfo({ house, onUpdate }) {
       </div>
       <div className="info-item">
         <span className="label">Подключено</span>
-        <span className="value highlight">{house.apartments.filter(apt => apt.residents.some(r => r.hasContract)).length}</span>
+        <span className="value highlight">{house.apartments.filter(apt => apt.residents.some(r => r.rawData?.['наличие договора'] === '+')).length}</span>
       </div>
       <div className="info-item">
         <span className="label">Абонплата/мес</span>

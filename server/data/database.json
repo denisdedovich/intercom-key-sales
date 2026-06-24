@@ -35,7 +35,8 @@
               "invoiceIssued": false,
               "tubeStatus": "none",
               "tubePayment": false,
-              "id": "06aa1b3c-b2f8-4e0b-9794-87855f1c1097"
+              "id": "06aa1b3c-b2f8-4e0b-9794-87855f1c1097",
+              "hasContract": true
             }
           ]
         },
@@ -58,7 +59,8 @@
               "invoiceIssued": false,
               "tubeStatus": "none",
               "tubePayment": false,
-              "id": "590ea568-05f7-434d-9a9c-80ae61e7c84d"
+              "id": "590ea568-05f7-434d-9a9c-80ae61e7c84d",
+              "hasContract": true
             }
           ]
         },
@@ -80,7 +82,8 @@
               "invoiceIssued": false,
               "tubeStatus": "none",
               "tubePayment": false,
-              "id": "0f243c8b-00ba-4a2d-aa8d-7b6f6f2235db"
+              "id": "0f243c8b-00ba-4a2d-aa8d-7b6f6f2235db",
+              "hasContract": true
             }
           ]
         },

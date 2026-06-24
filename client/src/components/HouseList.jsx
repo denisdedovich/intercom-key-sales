@@ -6,7 +6,7 @@ function HouseList({ houses, onSelect }) {
   return (
     <div className="house-list">
       {houses.map(house => {
-        const connected = house.apartments ? house.apartments.filter(apt => apt.residents.some(r => r.hasContract)).length : 0;
+        const connected = house.apartments ? house.apartments.filter(apt => apt.residents.some(r => r.rawData?.['наличие договора'] === '+')).length : 0;
         return (
           <div key={house.id} className="house-card" onClick={() => onSelect(house.id)}>
             <div className="house-card-address">{house.address}</div>
