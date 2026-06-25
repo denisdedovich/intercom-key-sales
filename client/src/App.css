@@ -242,6 +242,15 @@ body {
   min-height: 20px;
 }
 
+.cell-readonly {
+  color: #374151;
+  font-weight: 600;
+  cursor: default;
+  padding: 2px 4px;
+  display: inline-block;
+  width: 100%;
+}
+
 .apartment-table input[type="text"],
 .apartment-table input[type="number"],
 .apartment-table select {

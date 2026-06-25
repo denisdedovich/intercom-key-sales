@@ -21,6 +21,10 @@ function ApartmentTable({ house, onDeleteApartment, onDeleteResident, onAddResid
     const resident = house.apartments.find(a => a.id === aptId)?.residents.find(r => r.id === resId);
     if (!resident) return;
     const newRawData = { ...resident.rawData, [colName]: value };
+    if (colName === 'заказано доп. ключей') {
+      const n = parseInt(value, 10);
+      newRawData['сумма'] = isNaN(n) || n === 0 ? '' : String(n * 300);
+    }
     onUpdateResident(aptId, resId, { rawData: newRawData });
     handleCellBlur();
   };
@@ -70,6 +74,9 @@ function ApartmentTable({ house, onDeleteApartment, onDeleteResident, onAddResid
     }
     if (colName === 'оплата') {
       return renderPaymentSelect(aptId, resId, colName, value);
+    }
+    if (colName === 'сумма') {
+      return <span className="cell-readonly">{value || ''}</span>;
     }
     const cellKey = `raw_${colName}`;
     if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === cellKey) {
