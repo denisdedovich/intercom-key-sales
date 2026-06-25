@@ -7,6 +7,7 @@ import ApartmentTable from './components/ApartmentTable';
 import AddHouseModal from './components/AddHouseModal';
 import AddApartmentModal from './components/AddApartmentModal';
 import ImportModal from './components/ImportModal';
+import AddResidentModal from './components/AddResidentModal';
 
 const API_URL = 'http://localhost:3001/api';
 
@@ -17,6 +18,7 @@ function App() {
   const [showAddHouse, setShowAddHouse] = useState(false);
   const [showAddApartment, setShowAddApartment] = useState(false);
   const [showImport, setShowImport] = useState(false);
+  const [showAddResident, setShowAddResident] = useState(false);
 
   const fetchHouses = useCallback(async () => {
     try {
@@ -121,6 +123,35 @@ function App() {
     }
   };
 
+  const handleDeleteResident = async (aptId, resId) => {
+    try {
+      await axios.delete(`${API_URL}/houses/${selectedHouseId}/apartments/${aptId}/residents/${resId}`);
+      fetchHouse(selectedHouseId);
+      fetchHouses();
+    } catch (err) {
+      console.error('Error deleting resident:', err);
+    }
+  };
+
+  const handleAddResidentFromModal = async (aptNumber, rawData) => {
+    try {
+      let apt = selectedHouse.apartments.find(a => a.number === aptNumber);
+      if (!apt) {
+        const resApt = await axios.post(`${API_URL}/houses/${selectedHouseId}/apartments`, { number: aptNumber });
+        apt = resApt.data;
+      }
+      await axios.post(`${API_URL}/houses/${selectedHouseId}/apartments/${apt.id}/residents`, {
+        rawData,
+        name: ''
+      });
+      fetchHouse(selectedHouseId);
+      fetchHouses();
+      setShowAddResident(false);
+    } catch (err) {
+      console.error('Error adding resident:', err);
+    }
+  };
+
   return (
     <div className="app-container">
       <div className="app-header">
@@ -137,6 +168,9 @@ function App() {
             <span className="controls-address">{selectedHouse.address}</span>
             <button className="btn btn-success" onClick={() => setShowAddApartment(true)}>
               + Квартира
+            </button>
+            <button className="btn btn-primary" onClick={() => setShowAddResident(true)}>
+              + Жилец
             </button>
             <button className="btn btn-danger btn-small" onClick={handleDeleteHouse}>
               Удалить дом
@@ -160,6 +194,7 @@ function App() {
           <ApartmentTable
             house={selectedHouse}
             onDeleteApartment={handleDeleteApartment}
+            onDeleteResident={handleDeleteResident}
             onAddResident={handleAddResident}
             onUpdateResident={handleUpdateResident}
           />
@@ -190,6 +225,14 @@ function App() {
 
       {showImport && (
         <ImportModal onClose={() => setShowImport(false)} onImport={() => { fetchHouses(); setShowImport(false); }} />
+      )}
+
+      {showAddResident && selectedHouse && (
+        <AddResidentModal
+          house={selectedHouse}
+          onClose={() => setShowAddResident(false)}
+          onAdd={handleAddResidentFromModal}
+        />
       )}
     </div>
   );

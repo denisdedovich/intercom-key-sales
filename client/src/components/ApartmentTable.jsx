@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-function ApartmentTable({ house, onDeleteApartment, onAddResident, onUpdateResident }) {
+function ApartmentTable({ house, onDeleteApartment, onDeleteResident, onAddResident, onUpdateResident }) {
   const [editingCell, setEditingCell] = useState(null);
-  const [newResidentAptId, setNewResidentAptId] = useState(null);
 
   const rawColumns = house.columns?.length > 0
     ? house.columns
@@ -26,7 +25,28 @@ function ApartmentTable({ house, onDeleteApartment, onAddResident, onUpdateResid
     handleCellBlur();
   };
 
+  const isYesNoColumn = (colName) => colName === 'наличие договора' || colName === 'выданы базовые ключи';
+
+  const renderYesNoSelect = (aptId, resId, colName, value) => {
+    const isYes = value === '+';
+    return (
+      <select
+        className={`badge-select ${isYes ? 'badge-yes' : 'badge-no'}`}
+        value={isYes ? 'yes' : 'no'}
+        onChange={(e) => {
+          handleUpdateRawData(aptId, resId, colName, e.target.value === 'yes' ? '+' : '');
+        }}
+      >
+        <option value="yes">Да</option>
+        <option value="no">Нет</option>
+      </select>
+    );
+  };
+
   const renderRawCell = (aptId, resId, colName, value) => {
+    if (isYesNoColumn(colName)) {
+      return renderYesNoSelect(aptId, resId, colName, value);
+    }
     const cellKey = `raw_${colName}`;
     if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === cellKey) {
       return (
@@ -49,23 +69,26 @@ function ApartmentTable({ house, onDeleteApartment, onAddResident, onUpdateResid
     );
   };
 
-  const totalCols = rawColumns.length + 1;
-
   return (
     <div className="table-wrapper">
       <table className="apartment-table">
         <thead>
           <tr>
+            <th style={{ width: '32px' }}></th>
             {rawColumns.map(col => (
-              <th key={col}>{col}</th>
+              <th key={col}>
+                {col}
+                {col === 'выданы базовые ключи' && (
+                  <span className="th-hint">баз. = 2 шт</span>
+                )}
+              </th>
             ))}
-            <th>Действия</th>
           </tr>
         </thead>
         <tbody>
           {house.apartments.length === 0 && (
             <tr>
-              <td colSpan={totalCols} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
+              <td colSpan={rawColumns.length + 1} style={{ textAlign: 'center', padding: '40px', color: '#9ca3af' }}>
                 Нет добавленных квартир. Нажмите "+ Квартира" или импортируйте данные.
               </td>
             </tr>
@@ -74,61 +97,22 @@ function ApartmentTable({ house, onDeleteApartment, onAddResident, onUpdateResid
             <React.Fragment key={apt.id}>
               {apt.residents.length === 0 && (
                 <tr>
+                  <td></td>
                   <td colSpan={rawColumns.length} style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                     Нет жильцов
-                  </td>
-                  <td>
-                    <div className="actions-cell">
-                      <button className="btn btn-secondary btn-small" onClick={() => setNewResidentAptId(apt.id)}>+ Жилец</button>
-                      <button className="btn btn-danger btn-small" onClick={() => onDeleteApartment(apt.id)}>Удалить</button>
-                    </div>
                   </td>
                 </tr>
               )}
               {apt.residents.map((res) => (
-                <tr key={res.id}>
+                <tr key={res.id} className="resident-row">
+                  <td className="row-delete">
+                    <button className="btn-delete-row" onClick={() => onDeleteResident(apt.id, res.id)} title="Удалить жильца">✕</button>
+                  </td>
                   {rawColumns.map(col => (
                     <td key={col}>{renderRawCell(apt.id, res.id, col, res.rawData?.[col])}</td>
                   ))}
-                  <td>
-                    <div className="actions-cell">
-                      <button className="btn btn-secondary btn-small" onClick={() => setNewResidentAptId(apt.id)}>+ Жилец</button>
-                      {apt.residents.length === 1 && (
-                        <button className="btn btn-danger btn-small" onClick={() => onDeleteApartment(apt.id)}>Удалить</button>
-                      )}
-                    </div>
-                  </td>
                 </tr>
               ))}
-              {newResidentAptId === apt.id && (
-                <tr>
-                  <td colSpan={rawColumns.length}>
-                    <div style={{ color: '#9ca3af', fontStyle: 'italic' }}>
-                      Новая запись для квартиры
-                    </div>
-                  </td>
-                  <td>
-                    <div className="actions-cell">
-                      <button className="btn btn-success btn-small" onClick={() => {
-                        onAddResident(apt.id, {
-                          name: '',
-                          rawData: {},
-                          hasContract: false,
-                          contractStatus: 'unsigned',
-                          keysSold: 0,
-                          isPaid: false,
-                          paymentMethod: '',
-                          invoiceIssued: false,
-                          tubeStatus: 'none',
-                          tubePayment: false
-                        });
-                        setNewResidentAptId(null);
-                      }}>Добавить</button>
-                      <button className="btn btn-secondary btn-small" onClick={() => setNewResidentAptId(null)}>Отмена</button>
-                    </div>
-                  </td>
-                </tr>
-              )}
             </React.Fragment>
           ))}
         </tbody>

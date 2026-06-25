@@ -114,6 +114,17 @@ router.put('/:houseId/apartments/:aptId/residents/:resId', (req, res) => {
   res.json(apt.residents[resIndex]);
 });
 
+router.delete('/:houseId/apartments/:aptId/residents/:resId', (req, res) => {
+  const db = readDB();
+  const house = db.houses.find(h => h.id === req.params.houseId);
+  if (!house) return res.status(404).json({ error: 'House not found' });
+  const apt = house.apartments.find(a => a.id === req.params.aptId);
+  if (!apt) return res.status(404).json({ error: 'Apartment not found' });
+  apt.residents = apt.residents.filter(r => r.id !== req.params.resId);
+  writeDB(db);
+  res.json({ success: true });
+});
+
 router.post('/:houseId/apartments/:aptId/residents', (req, res) => {
   const db = readDB();
   const house = db.houses.find(h => h.id === req.params.houseId);
@@ -122,6 +133,7 @@ router.post('/:houseId/apartments/:aptId/residents', (req, res) => {
   if (!apt) return res.status(404).json({ error: 'Apartment not found' });
   const resident = {
     id: uuidv4(),
+    rawData: req.body.rawData || {},
     name: req.body.name || '',
     hasContract: req.body.hasContract || false,
     contractStatus: req.body.contractStatus || 'unsigned',
