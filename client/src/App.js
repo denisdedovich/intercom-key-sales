@@ -154,10 +154,12 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="app-header">
-        <h1>Учет продажи ключей для домофонов</h1>
-        <p>Управление ключами, трубками и оплатой</p>
-      </div>
+      {!selectedHouse && (
+        <div className="app-header">
+          <h1>Учет продажи ключей для домофонов</h1>
+          <p>Управление ключами, трубками и оплатой</p>
+        </div>
+      )}
 
       <div className="controls-bar">
         {selectedHouse ? (

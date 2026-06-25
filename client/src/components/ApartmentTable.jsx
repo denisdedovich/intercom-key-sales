@@ -27,6 +27,13 @@ function ApartmentTable({ house, onDeleteApartment, onDeleteResident, onAddResid
 
   const isYesNoColumn = (colName) => colName === 'наличие договора' || colName === 'выданы базовые ключи';
 
+  const PAYMENT_OPTIONS = [
+    { value: '', label: '—' },
+    { value: 'договор', label: 'Договор' },
+    { value: 'наличные', label: 'Наличные' },
+    { value: 'карта', label: 'Карта' },
+  ];
+
   const renderYesNoSelect = (aptId, resId, colName, value) => {
     const isYes = value === '+';
     return (
@@ -43,9 +50,26 @@ function ApartmentTable({ house, onDeleteApartment, onDeleteResident, onAddResid
     );
   };
 
+  const renderPaymentSelect = (aptId, resId, colName, value) => {
+    return (
+      <select
+        className={`badge-select badge-payment-${value || 'none'}`}
+        value={value || ''}
+        onChange={(e) => handleUpdateRawData(aptId, resId, colName, e.target.value)}
+      >
+        {PAYMENT_OPTIONS.map(opt => (
+          <option key={opt.value} value={opt.value}>{opt.label}</option>
+        ))}
+      </select>
+    );
+  };
+
   const renderRawCell = (aptId, resId, colName, value) => {
     if (isYesNoColumn(colName)) {
       return renderYesNoSelect(aptId, resId, colName, value);
+    }
+    if (colName === 'оплата') {
+      return renderPaymentSelect(aptId, resId, colName, value);
     }
     const cellKey = `raw_${colName}`;
     if (editingCell?.aptId === aptId && editingCell?.resId === resId && editingCell?.field === cellKey) {
@@ -62,9 +86,10 @@ function ApartmentTable({ house, onDeleteApartment, onDeleteResident, onAddResid
         />
       );
     }
+    const isComment = colName === 'комментарии';
     return (
-      <span className="editable" onClick={() => handleCellClick(aptId, resId, cellKey)}>
-        {value || '—'}
+      <span className={`editable ${isComment ? 'editable-comment' : ''}`} onClick={() => handleCellClick(aptId, resId, cellKey)}>
+        {value || (isComment ? <span className="placeholder-text">Введите комментарий...</span> : '')}
       </span>
     );
   };
